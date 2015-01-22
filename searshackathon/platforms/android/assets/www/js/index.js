@@ -59,13 +59,16 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
     }
 };
+
+function menuAction(e){
+    e.parentNode.className = "lowerScreen";
+    e.parentNode.innerHTML = e.parentNode.innerHTML+'<div id="cover" onclick="menuClose(this)"></div>';
+}
+
+function menuClose(e) {
+    e.parentNode.className = "";
+    e.remove();
+}
