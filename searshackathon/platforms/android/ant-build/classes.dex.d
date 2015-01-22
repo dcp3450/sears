@@ -1,0 +1,21 @@
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes.dex : \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$1.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$2.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$3.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$4.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$5.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$6.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$7.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$8.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin$9.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/NfcPlugin.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/chariotsolutions/nfc/plugin/Util.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/BuildConfig.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/CordovaApp.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/R$attr.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/R$drawable.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/R$string.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/R$xml.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/com/sears/gobiglabs/R.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/classes/org/apache/cordova/api/Dummy.class \
+/Users/kalvarez/Documents/Development/Projects/SearsApp/sears/searshackathon/platforms/android/ant-build/dexedLibs/classes-4a4de586a0fba78625354106705d7263.jar \
