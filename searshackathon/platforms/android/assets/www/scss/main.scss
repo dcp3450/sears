@@ -112,14 +112,18 @@ img{
     vertical-align: middle;
 }
 .button-main{
+    @include span-columns(6 of 12);
     background: $searsOrange;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 15px;
     color: #ffffff;
-    font-size: 14px;
+    font-family: $openSansReg;
+    font-size: 16px;
     margin-bottom: 40px;
-    @include span-columns(6 of 12);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
 }
 nav,
 section,
@@ -232,18 +236,24 @@ article {
     img{
         @include span-columns(5 of 12);
         @include shift(3.5);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-    p,h1{
+    p{
         clear: both;
         text-align: center;
         margin: 0 0 20px 0;
         font-family: $openSansReg;
+        font-size: 12px;
         text-transform: uppercase;
+        letter-spacing: 1px;
         &.point-value{
-            font-size: 32px;
+            font-size: 50px;
             margin-bottom: 5px;
         }
+        &.name{
+            font-size: 30px;
+        }
+
     }
 }
 .panel{
@@ -256,6 +266,8 @@ article {
         text-align: center;
         width: 100%;
         margin: 0;
+        font-size: 16px;
+        text-transform: uppercase;
     }
 
 }

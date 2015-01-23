@@ -60,10 +60,11 @@
                 <article class="current">
                     <button class="menu" onclick="menuAction(this)">menu</button>
                     <div class="wrap user-info">
-                        <h1>James Anderson</h1>
+                        <p class="name">James Anderson</p>
                         <img src="img/profileMain.png">
                         <p class="point-value">250</p>
                         <p>Points</p>
+                        <p id="nfc-value"></p>
                     </div>
                     <div class="wrap">
                         <button class="button-main">Redeem Points</button>
@@ -74,23 +75,34 @@
                         <p>Hardwood</p>
                     </div>
                     <div class="panel">
-                        <img src="img/hardwoodPanel.jpg">
+                        <img src="img/suitsPanel.jpg">
                         <p>Suits</p>
                     </div>
                     <div class="panel">
-                        <img src="img/hardwoodPanel.jpg">
+                        <img src="img/appliancesPanel.jpg">
                         <p>Appliances</p>
                     </div>
-                    <p id="nfc-value"></p>
-                    <p id="nfc-id"></p>
+
+                    <!--<p id="nfc-id"></p>-->
 
                 </article>
             </section>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <!--<script type="text/javascript" src="js/index.js"></script>-->
+        <!--<script type="text/javascript">-->
+            <!--app.initialize();-->
+        <!--</script>-->
         <script type="text/javascript">
-            app.initialize();
+            function menuAction(e){
+    e.parentNode.parentNode.className = "lowerScreen";
+    e.parentNode.parentNode.innerHTML = e.parentNode.parentNode.innerHTML+'<div id="cover" onclick="menuClose(this)"></div>';
+}
+
+function menuClose(e) {
+    e.parentNode.className = "";
+    e.remove();
+}
         </script>
     </body>
 </html>

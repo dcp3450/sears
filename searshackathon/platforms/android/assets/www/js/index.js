@@ -34,24 +34,24 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        //        Read NDEF formatted NFC Tags
+//                Read NDEF formatted NFC Tags
                 nfc.addNdefListener (
                     function (nfcEvent) {
                         var tag = nfcEvent.tag,
                             ndefMessage = tag.ndefMessage;
 
-        //                dump the raw json of the message
-        //                note: real code will need to decode
-        //                the payload from each record
-        //                alert(JSON.stringify(tag));
+//                        dump the raw json of the message
+//                        note: real code will need to decode
+//                        the payload from each record
+//                        alert(JSON.stringify(tag));
 
                         var tagId = nfc.bytesToHexString(tag.id);
                         alert(tagId);
 
-        //                assuming the first record in the message has
-        //                a payload that can be converted to a string.
-        //                var messageString = nfc.bytesToString(ndefMessage[0].payload).substring(3);
-        //                alert(nfc.bytesToString(ndefMessage[0].payload).substring(3));
+//                        assuming the first record in the message has
+//                        a payload that can be converted to a string.
+//                        var messageString = nfc.bytesToString(ndefMessage[0].payload).substring(3);
+//                        alert(nfc.bytesToString(ndefMessage[0].payload).substring(3));
 
 
                         /** USE TO WRITE TO NFC TAG **/
@@ -80,7 +80,7 @@ var app = {
                 nfc.addMimeTypeListener(
                     'app/searshack',
                     function(nfcEvent) {
-        //              ignore what's on the tag
+//                      ignore what's on the tag
 
                         console.log(nfcEvent);
                         var tag = nfcEvent.tag,
@@ -88,14 +88,14 @@ var app = {
                         var messageString = nfc.bytesToString(ndefMessage[0].payload).substring(0);
                         var tagId = nfc.bytesToHexString(tag.id);
                         document.getElementById("nfc-value").innerHTML = messageString;
-                        document.getElementById("nfc-id").innerHTML = "tag-ID="+tagId;
+//                        document.getElementById("nfc-id").innerHTML = "tag-ID="+tagId;
 
                     },
                     function() { console.log("listening for MIME NDEF tags"); },
                     function(error) { console.log("Error registering MIME NDEF listener " + error); }
                 );
     },
-    // Update DOM on a Received Event
+//    Update DOM on a Received Event
     receivedEvent: function(id) {
 
     }
