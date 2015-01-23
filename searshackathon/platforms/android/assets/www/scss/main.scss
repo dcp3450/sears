@@ -1,0 +1,87 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+/*neat imports*/
+@import 'bourbon';
+@import 'neat';
+
+/*NEAT Settings*/
+$max-width: 700;
+$grid-columns: 12;
+$column: 51px;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid: true;
+
+/* fonts and colors */
+$OpenSansLight: normal normal 300 14px/17px 'Open Sans',helvetica, arial, sans-serif;
+$OpenSansReg: normal normal 400 14px/17px 'Open Sans',helvetica, arial, sans-serif;
+$OpenSansSemi: normal normal 600 14px/17px 'Open Sans',helvetica, arial, sans-serif;
+$OpenSansBold: normal normal 700 14px/17px 'Open Sans',helvetica, arial, sans-serif;
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background: #fff;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+
+}
+nav,
+section,
+#cover{
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+nav {
+    background: lightgrey;
+    z-index: 1;
+}
+section {
+    background: grey;
+    overflow: hidden;
+    z-index: 2;
+}
+article {
+    background: orange;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 500ms ease;
+}
+.lowerScreen {
+    -webkit-transform: scale(.6) translateX(60%);
+}
+#cover {
+    z-index: 3;
+}
