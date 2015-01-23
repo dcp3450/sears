@@ -33,6 +33,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -62,6 +71,17 @@
 		"initialSize": 337480,
 		"inputAbbreviatedPath": "\/img\/menuBack.jpg",
 		"outputAbbreviatedPath": "\/img\/menuBack.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/menuIcons.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4316,
+		"inputAbbreviatedPath": "\/img\/menuIcons.png",
+		"outputAbbreviatedPath": "\/img\/menuIcons.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

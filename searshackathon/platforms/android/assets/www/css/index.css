@@ -17,15 +17,42 @@
  * under the License.
  */
 /*neat imports*/
-* {
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 /*NEAT Settings*/
 /* fonts and colors */
+@font-face {
+  font-family: 'gothicRegular';
+  src: url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.eot");
+  src: url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff2") format("woff2"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff") format("woff"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.ttf") format("truetype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.svg#alternate_gothic_no2_dregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gothamBold';
+  src: url("fonts/gotham_bold-webfont.eot");
+  src: url("fonts/gotham_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gotham_bold-webfont.woff2") format("woff2"), url("fonts/gotham_bold-webfont.woff") format("woff"), url("fonts/gotham_bold-webfont.ttf") format("truetype"), url("fonts/gotham_bold-webfont.svg#gotham_boldregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'openSansRegular';
+  src: url("opensans-regular-webfont.eot");
+  src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-regular-webfont.woff2") format("woff2"), url("opensans-regular-webfont.woff") format("woff"), url("opensans-regular-webfont.ttf") format("truetype"), url("opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */ }
 
 body {
@@ -44,14 +71,12 @@ body {
 
 /* Portrait layout (default) */
 .wrap {
-  *zoom: 1;
   max-width: 700;
   margin-left: auto;
   margin-right: auto; }
-  .wrap:before, .wrap:after {
-    content: " ";
-    display: table; }
   .wrap:after {
+    content: "";
+    display: table;
     clear: both; }
 
 h1, p {
@@ -90,7 +115,64 @@ section,
 nav {
   background: #142856 url("../img/menuBack.jpg") no-repeat 0 0;
   background-size: cover;
+  color: white;
+  font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
+  padding-top: 60px;
   z-index: 1; }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+
+#menu {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 20px; }
+  #menu:last-child {
+    margin-right: 0; }
+  #menu li {
+    background: transparent url("../img/menuIcons.png") no-repeat 0 0;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 45px; }
+    #menu li:last-child {
+      margin-bottom: 0; }
+  #menu #home {
+    background-position: 0 17px; }
+  #menu #points {
+    background-position: 0 -53px; }
+  #menu #coupons {
+    background-position: 0 -125px; }
+  #menu #notify {
+    background-position: 0 -197px; }
+  #menu .current {
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    color: black; }
+
+#prefStore {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  clear: both;
+  margin-left: 20px; }
+  #prefStore:last-child {
+    margin-right: 0; }
+  #prefStore .title {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase; }
+  #prefStore ul {
+    margin-left: 20px;
+    padding-left: 20px; }
+
+#address,
+#phone {
+  background: transparent url("../img/menuIcons.png") no-repeat 0 -570px; }
 
 section {
   background: blue;
@@ -130,7 +212,7 @@ article {
     margin: 0; }
 
 .lowerScreen {
-  -webkit-transform: scale(0.6) translateX(60%); }
+  -webkit-transform: scale(0.6) translateX(80%); }
 
 #cover {
   z-index: 3; }
