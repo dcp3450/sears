@@ -110,3 +110,7 @@ function menuClose(e) {
     e.parentNode.className = "";
     e.remove();
 }
+
+function triggerView(view){
+
+}

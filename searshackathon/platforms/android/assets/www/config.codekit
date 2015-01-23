@@ -53,6 +53,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/appliancesPanel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22330,
+		"inputAbbreviatedPath": "\/img\/appliancesPanel.jpg",
+		"outputAbbreviatedPath": "\/img\/appliancesPanel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/contentBack.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -148,6 +159,17 @@
 		"initialSize": 36371,
 		"inputAbbreviatedPath": "\/img\/profileMain.png",
 		"outputAbbreviatedPath": "\/img\/profileMain.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/suitsPanel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34376,
+		"inputAbbreviatedPath": "\/img\/suitsPanel.jpg",
+		"outputAbbreviatedPath": "\/img\/suitsPanel.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

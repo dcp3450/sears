@@ -111,10 +111,13 @@ img{
     width: 100%;
     vertical-align: middle;
 }
-.header {
+header {
+    background: #4684bf;
     height: 40px;
+    position: relative;
     width: 100%;
     -webkit-backface-visibility: hidden;
+    z-index: 10;
     .menu {
         background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
         display: block;
@@ -237,13 +240,6 @@ section {
 
     -webkit-transition: all 500ms ease;
 }
-article {
-    background: #152850 url('../img/contentBack.png') no-repeat 0 0;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
-}
 .user-info{
 
     img{
@@ -290,4 +286,17 @@ article {
 }
 #cover {
     z-index: 3;
+}
+
+/* articles */
+article {
+    @include position(absolute, null null 0 0);
+    background: #152850 url('../img/contentBack.png') no-repeat 0 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    &.off {
+        display: none;
+    }
 }

@@ -89,11 +89,14 @@ img {
   width: 100%;
   vertical-align: middle; }
 
-.header {
+header {
+  background: #4684bf;
   height: 40px;
+  position: relative;
   width: 100%;
-  -webkit-backface-visibility: hidden; }
-  .header .menu {
+  -webkit-backface-visibility: hidden;
+  z-index: 10; }
+  header .menu {
     background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
     display: block;
     height: 21px;
@@ -102,10 +105,10 @@ img {
     -webkit-backface-visibility: hidden; }
 
 .button-main {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
   background: #ff6600;
   border: none;
   border-radius: 5px;
@@ -114,15 +117,8 @@ img {
   font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
   font-size: 16px;
   margin-bottom: 40px;
-<<<<<<< HEAD
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 48.821174201%; }
-=======
   text-transform: uppercase;
   letter-spacing: 1px; }
->>>>>>> 8c4aaa18858e846fec7f6da5d401cc8b83c5bbfa
   .button-main:last-child {
     margin-right: 0; }
 
@@ -237,27 +233,13 @@ section {
   z-index: 2;
   -webkit-transition: all 500ms ease; }
 
-article {
-  background: #152850 url("../img/contentBack.png") no-repeat 0 0;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  overflow-x: scroll; }
-
 .user-info img {
   float: left;
-<<<<<<< HEAD
   display: block;
   margin-right: 2.3576515979%;
   width: 40.2913699012%;
   margin-left: 29.8543150494%;
-  margin-bottom: 20px; }
-=======
-  margin-right: 2.35765%;
-  width: 40.29137%;
-  margin-left: 29.85432%;
   margin-bottom: 10px; }
->>>>>>> 8c4aaa18858e846fec7f6da5d401cc8b83c5bbfa
   .user-info img:last-child {
     margin-right: 0; }
 .user-info p {
@@ -293,3 +275,16 @@ article {
 
 #cover {
   z-index: 3; }
+
+/* articles */
+article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #152850 url("../img/contentBack.png") no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll; }
+  article.off {
+    display: none; }
