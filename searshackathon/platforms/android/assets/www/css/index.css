@@ -88,10 +88,11 @@ img {
 .button-main {
   background: #ff6600;
   border: none;
-  padding: 15px 20px;
+  border-radius: 5px;
+  padding: 10px 15px;
   color: #ffffff;
   font-size: 14px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   display: block;
   float: left;
   margin-right: 2.35765%;
@@ -179,22 +180,27 @@ article {
   background: #152850 url("../img/contentBack.png") no-repeat 0 0;
   background-size: cover;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow-x: scroll; }
 
 .user-info img {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 40.29137%;
-  margin-left: 29.85432%; }
+  margin-left: 29.85432%;
+  margin-bottom: 20px; }
   .user-info img:last-child {
     margin-right: 0; }
 .user-info p, .user-info h1 {
   clear: both;
   text-align: center;
-  margin: 0; }
+  margin: 0 0 20px 0;
+  font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
+  text-transform: uppercase; }
   .user-info p.point-value, .user-info h1.point-value {
-    font-size: 28px; }
+    font-size: 32px;
+    margin-bottom: 5px; }
 
 .panel {
   border-bottom: 4px solid #ff6600;

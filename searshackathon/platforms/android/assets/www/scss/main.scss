@@ -74,6 +74,7 @@ $gothamBold: normal normal 700 14px/17px 'gothamBold',helvetica, arial, sans-ser
 $openSansReg: normal normal 400 14px/17px 'openSansRegular',helvetica, arial, sans-serif;
 
 $searsOrange: #ff6600;
+$searsBlueMain: #152850;
 
 
 * {
@@ -113,10 +114,11 @@ img{
 .button-main{
     background: $searsOrange;
     border: none;
-    padding: 15px 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
     color: #ffffff;
     font-size: 14px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     @include span-columns(6 of 12);
 }
 nav,
@@ -205,19 +207,24 @@ article {
     background-size: cover;
     height: 100%;
     width: 100%;
+    overflow-x: scroll;
 }
 .user-info{
 
     img{
         @include span-columns(5 of 12);
         @include shift(3.5);
+        margin-bottom: 20px;
     }
     p,h1{
         clear: both;
         text-align: center;
-        margin: 0;
+        margin: 0 0 20px 0;
+        font-family: $openSansReg;
+        text-transform: uppercase;
         &.point-value{
-            font-size: 28px;
+            font-size: 32px;
+            margin-bottom: 5px;
         }
     }
 }
