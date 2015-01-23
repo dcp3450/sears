@@ -55,6 +55,9 @@ body {
 .app {
 
 }
+.wrap {
+    @include outer-container;
+}
 nav,
 section,
 #cover{
