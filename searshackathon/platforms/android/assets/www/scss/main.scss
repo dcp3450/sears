@@ -35,6 +35,9 @@ $OpenSansReg: normal normal 400 14px/17px 'Open Sans',helvetica, arial, sans-ser
 $OpenSansSemi: normal normal 600 14px/17px 'Open Sans',helvetica, arial, sans-serif;
 $OpenSansBold: normal normal 700 14px/17px 'Open Sans',helvetica, arial, sans-serif;
 
+$searsOrange: #ff6600;
+
+
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -58,6 +61,26 @@ body {
 .wrap {
     @include outer-container;
 }
+
+h1,p{
+    color: #ffffff;
+}
+h1{
+    font-size: 24px;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+.button-main{
+    background: $searsOrange;
+    border: none;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 60px;
+    @include span-columns(6 of 12);
+}
 nav,
 section,
 #cover{
@@ -74,15 +97,44 @@ nav {
 }
 section {
     background: blue;
-    overflow: hidden;
+
     z-index: 2;
 
     -webkit-transition: all 500ms ease;
 }
 article {
-    background: #152850;
+    background: #152850 url('../img/contentBack.png') no-repeat 0 0;
+    background-size: cover;
     height: 100%;
     width: 100%;
+}
+.user-info{
+
+    img{
+        @include span-columns(5 of 12);
+        @include shift(3.5);
+    }
+    p,h1{
+        clear: both;
+        text-align: center;
+        margin: 0;
+        &.point-value{
+            font-size: 28px;
+        }
+    }
+}
+.panel{
+    border-bottom: 4px solid $searsOrange;
+    position: relative;
+    margin-bottom: 10px;
+    p{
+        position: absolute;
+        top: 40%;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
 }
 .lowerScreen {
     -webkit-transform: scale(.6) translateX(60%);
