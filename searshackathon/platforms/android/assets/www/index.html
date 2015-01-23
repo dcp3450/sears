@@ -32,17 +32,17 @@
     <body>
         <div class="app">
             <nav class="wrap">
-                <div id="profileTrigger">
+                <div onclick='triggerView("profile")' id="profileTrigger">
                     <div class="profileimg">
                         <img src="img/profileimg.jpg" />
                     </div>
                     <p class="name">Jame Anderson</p>
                 </div>
                 <ul id="menu">
-                    <li id="home" class="current">Home</li>
-                    <li id="points">Redeem Points</li>
-                    <li id="coupons">My Coupons</li>
-                    <li id="notify">Notifications</li>
+                    <li onclick='triggerView("home")' id="home" class="current">Home</li>
+                    <li onclick='triggerView("points")' id="points">Redeem Points</li>
+                    <li onclick='triggerView("coupons")' id="coupons">My Coupons</li>
+                    <li onclick='triggerView("notify")' id="notify">Notifications</li>
                 </ul>
                 <div id="prefStore">
                     <p class="title">Preferred Store</p>
@@ -57,8 +57,12 @@
                 </div>
             </nav>
             <section>
-                <article class="current">
-                    <button class="menu" onclick="menuAction(this)">menu</button>
+
+                <header>
+                    <div class="menu" onclick="menuAction(this)">menu</div>
+                    <div onclick='triggerView("points")' class="smallPoints"></div>
+                </header>
+                <article class="current home">
                     <div class="wrap user-info">
                         <p class="name">James Anderson</p>
                         <img src="img/profileMain.png">
@@ -67,8 +71,13 @@
                         <p id="nfc-value"></p>
                     </div>
                     <div class="wrap">
+<<<<<<< HEAD
                         <button class="button-main">Redeem Points</button>
                         <button class="button-main" onclick="triggerCouponsView()">My Coupons</button>
+=======
+                        <button onclick='triggerView("points")' class="button-main">Redeem Points</button>
+                        <button onclick='triggerView("coupons")' class="button-main">My Coupons</button>
+>>>>>>> 90090ddd8ee2bea78a6d0295fdb0e90448cc00d1
                     </div>
                     <div class="panel">
                         <img src="img/hardwoodPanel.jpg">
@@ -86,9 +95,13 @@
                     <!--<p id="nfc-id"></p>-->
 
                 </article>
+<<<<<<< HEAD
                 <article class="off">
 
                 </article>
+=======
+
+>>>>>>> 90090ddd8ee2bea78a6d0295fdb0e90448cc00d1
             </section>
         </div>
         <script type="text/javascript" src="cordova.js"></script>

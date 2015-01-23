@@ -17,10 +17,19 @@
  * under the License.
  */
 /*neat imports*/
-* {
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 /*NEAT Settings*/
 /* fonts and colors */
@@ -30,23 +39,20 @@
   src: url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff2") format("woff2"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff") format("woff"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.ttf") format("truetype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.svg#alternate_gothic_no2_dregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'gothamBold';
   src: url("fonts/gotham_bold-webfont.eot");
   src: url("fonts/gotham_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gotham_bold-webfont.woff2") format("woff2"), url("fonts/gotham_bold-webfont.woff") format("woff"), url("fonts/gotham_bold-webfont.ttf") format("truetype"), url("fonts/gotham_bold-webfont.svg#gotham_boldregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'openSansRegular';
   src: url("opensans-regular-webfont.eot");
   src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-regular-webfont.woff2") format("woff2"), url("opensans-regular-webfont.woff") format("woff"), url("opensans-regular-webfont.ttf") format("truetype"), url("opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */ }
 
 body {
@@ -65,14 +71,12 @@ body {
 
 /* Portrait layout (default) */
 .wrap {
-  *zoom: 1;
   max-width: 700;
   margin-left: auto;
   margin-right: auto; }
-  .wrap:before, .wrap:after {
-    content: " ";
-    display: table; }
   .wrap:after {
+    content: "";
+    display: table;
     clear: both; }
 
 h1, p {
@@ -85,11 +89,26 @@ img {
   width: 100%;
   vertical-align: middle; }
 
+header {
+  background: #4684bf;
+  height: 40px;
+  position: relative;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  z-index: 10; }
+  header .menu {
+    background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
+    display: block;
+    height: 21px;
+    text-indent: -999999px;
+    width: 30px;
+    -webkit-backface-visibility: hidden; }
+
 .button-main {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
   background: #ff6600;
   border: none;
   border-radius: 5px;
@@ -113,9 +132,9 @@ section,
   width: 100%; }
 
 nav {
-  background: #142856 url("../img/menuBack.jpg") no-repeat 0 0;
+  background: #142856 url("../img/menuBackW.jpg") no-repeat 0 0;
   background-size: cover;
-  color: white;
+  color: #152850;
   font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
   padding-top: 40px;
   z-index: 1; }
@@ -125,19 +144,19 @@ nav {
     margin: 0; }
 
 #profileTrigger {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 4.2649%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  margin-left: 4.2649021499%;
   margin-bottom: 80px; }
   #profileTrigger:last-child {
     margin-right: 0; }
   #profileTrigger .profileimg {
-    display: block;
     float: left;
-    margin-right: 4.11092%;
-    width: 25.63506%;
+    display: block;
+    margin-right: 4.1109178249%;
+    width: 25.6350586965%;
     background: #233864;
     border-radius: 360px;
     padding: 5px; }
@@ -146,20 +165,20 @@ nav {
   #profileTrigger img {
     border-radius: 360px; }
   #profileTrigger .name {
-    display: block;
     float: left;
-    margin-right: 4.11092%;
-    width: 70.25402%;
+    display: block;
+    margin-right: 4.1109178249%;
+    width: 70.2540234786%;
     text-transform: uppercase; }
     #profileTrigger .name:last-child {
       margin-right: 0; }
 
 #menu {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 4.2649%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  margin-left: 4.2649021499%;
   clear: both;
   font-size: 20px;
   line-height: 28px; }
@@ -177,16 +196,16 @@ nav {
   #menu #notify {
     background-position: 0 -197px; }
   #menu .current {
-    border-bottom: 1px black solid;
-    border-top: 1px black solid;
-    color: black; }
+    border-bottom: 1px #ff6600 solid;
+    border-top: 1px #ff6600 solid;
+    color: #ff6600; }
 
 #prefStore {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 4.2649%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  margin-left: 4.2649021499%;
   clear: both; }
   #prefStore:last-child {
     margin-right: 0; }
@@ -210,22 +229,16 @@ nav {
 
 section {
   background: blue;
+  display: block;
   z-index: 2;
   -webkit-transition: all 500ms ease; }
 
-article {
-  background: #152850 url("../img/contentBack.png") no-repeat 0 0;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  overflow-x: scroll; }
-
 .user-info img {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 40.29137%;
-  margin-left: 29.85432%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%;
+  margin-left: 29.8543150494%;
   margin-bottom: 10px; }
   .user-info img:last-child {
     margin-right: 0; }
@@ -257,7 +270,21 @@ article {
     text-transform: uppercase; }
 
 .lowerScreen {
-  -webkit-transform: scale(0.6) translateX(80%); }
+  -webkit-transform: scale(0.6) translateX(80%);
+  box-shadow: 0 0 15px black; }
 
 #cover {
   z-index: 3; }
+
+/* articles */
+article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #152850 url("../img/contentBack.png") no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll; }
+  article.off {
+    display: none; }
