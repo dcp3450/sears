@@ -114,29 +114,57 @@ nav {
   background-size: cover;
   color: white;
   font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
-  padding-top: 60px;
+  padding-top: 40px;
   z-index: 1; }
   nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0; }
 
+#profileTrigger {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 4.2649%;
+  margin-bottom: 80px; }
+  #profileTrigger:last-child {
+    margin-right: 0; }
+  #profileTrigger .profileimg {
+    display: block;
+    float: left;
+    margin-right: 4.11092%;
+    width: 25.63506%;
+    background: #233864;
+    border-radius: 360px;
+    padding: 5px; }
+    #profileTrigger .profileimg:last-child {
+      margin-right: 0; }
+  #profileTrigger img {
+    border-radius: 360px; }
+  #profileTrigger .name {
+    display: block;
+    float: left;
+    margin-right: 4.11092%;
+    width: 70.25402%;
+    text-transform: uppercase; }
+    #profileTrigger .name:last-child {
+      margin-right: 0; }
+
 #menu {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 57.35098%;
+  margin-left: 4.2649%;
+  clear: both;
   font-size: 20px;
-  line-height: 28px;
-  margin-left: 20px; }
+  line-height: 28px; }
   #menu:last-child {
     margin-right: 0; }
   #menu li {
     background: transparent url("../img/menuIcons.png") no-repeat 0 0;
-    margin-bottom: 20px;
     padding: 15px 0 15px 45px; }
-    #menu li:last-child {
-      margin-bottom: 0; }
   #menu #home {
     background-position: 0 17px; }
   #menu #points {
@@ -155,8 +183,8 @@ nav {
   float: left;
   margin-right: 2.35765%;
   width: 57.35098%;
-  clear: both;
-  margin-left: 20px; }
+  margin-left: 4.2649%;
+  clear: both; }
   #prefStore:last-child {
     margin-right: 0; }
   #prefStore .title {
@@ -164,12 +192,18 @@ nav {
     line-height: 28px;
     text-transform: uppercase; }
   #prefStore ul {
-    margin-left: 20px;
+    margin-left: 10px;
     padding-left: 20px; }
 
 #address,
 #phone {
-  background: transparent url("../img/menuIcons.png") no-repeat 0 -570px; }
+  background: transparent url("../img/menuIcons.png") no-repeat -6px -567px; }
+
+#address {
+  margin-bottom: 20px; }
+
+#phone {
+  background-position: -6px -647px; }
 
 section {
   background: blue;

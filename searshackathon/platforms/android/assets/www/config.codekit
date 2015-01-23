@@ -26,7 +26,7 @@
 		},
 	"\/css\/index.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/index.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -49,6 +49,28 @@
 		"initialSize": 11401,
 		"inputAbbreviatedPath": "\/icon.png",
 		"outputAbbreviatedPath": "\/icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/contentBack.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 188872,
+		"inputAbbreviatedPath": "\/img\/contentBack.png",
+		"outputAbbreviatedPath": "\/img\/contentBack.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hardwoodPanel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85995,
+		"inputAbbreviatedPath": "\/img\/hardwoodPanel.jpg",
+		"outputAbbreviatedPath": "\/img\/hardwoodPanel.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -82,6 +104,28 @@
 		"initialSize": 4316,
 		"inputAbbreviatedPath": "\/img\/menuIcons.png",
 		"outputAbbreviatedPath": "\/img\/menuIcons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/profileimg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13767,
+		"inputAbbreviatedPath": "\/img\/profileimg.jpg",
+		"outputAbbreviatedPath": "\/img\/profileimg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/profileMain.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36371,
+		"inputAbbreviatedPath": "\/img\/profileMain.png",
+		"outputAbbreviatedPath": "\/img\/profileMain.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -610,9 +654,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/main.scss",
-		"outputAbbreviatedPath": "\/css\/index.css",
+		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
