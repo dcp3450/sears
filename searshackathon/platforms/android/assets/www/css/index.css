@@ -168,7 +168,10 @@ nav {
 
 #address,
 #phone {
-  background: transparent url("../img/menuIcons.png") no-repeat 0 -570px; }
+  background: transparent url("../img/menuIcons.png") no-repeat 0 -567px; }
+
+#phone {
+  background-position: -29px -647px; }
 
 section {
   background: blue;
