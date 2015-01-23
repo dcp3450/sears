@@ -102,8 +102,8 @@ var app = {
 };
 
 function menuAction(e){
-    e.parentNode.className = "lowerScreen";
-    e.parentNode.innerHTML = e.parentNode.innerHTML+'<div id="cover" onclick="menuClose(this)"></div>';
+    e.parentNode.parentNode.className = "lowerScreen";
+    e.parentNode.parentNode.innerHTML = e.parentNode.parentNode.innerHTML+'<div id="cover" onclick="menuClose(this)"></div>';
 }
 
 function menuClose(e) {

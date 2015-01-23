@@ -68,19 +68,21 @@ section,
     width: 100%;
 }
 nav {
-    background: lightgrey;
+    background: #142856 url('../img/menuBack.jpg') no-repeat 0 0;
+    background-size: cover;
     z-index: 1;
 }
 section {
-    background: grey;
+    background: blue;
     overflow: hidden;
     z-index: 2;
+
+    -webkit-transition: all 500ms ease;
 }
 article {
     background: #152850;
     height: 100%;
     width: 100%;
-    -webkit-transition: all 500ms ease;
 }
 .lowerScreen {
     -webkit-transform: scale(.6) translateX(60%);
