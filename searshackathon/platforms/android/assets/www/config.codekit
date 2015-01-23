@@ -97,6 +97,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/menuBackW.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 421678,
+		"inputAbbreviatedPath": "\/img\/menuBackW.jpg",
+		"outputAbbreviatedPath": "\/img\/menuBackW.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/menuIcons.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -104,6 +115,17 @@
 		"initialSize": 4316,
 		"inputAbbreviatedPath": "\/img\/menuIcons.png",
 		"outputAbbreviatedPath": "\/img\/menuIcons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/menuTrigger.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 960,
+		"inputAbbreviatedPath": "\/img\/menuTrigger.png",
+		"outputAbbreviatedPath": "\/img\/menuTrigger.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -139,6 +161,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/js\/desktop.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/desktop.js",
+		"outputAbbreviatedPath": "\/js\/min\/desktop-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/index-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -158,6 +191,17 @@
 		"outputAbbreviatedPath": "\/js\/index-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/desktop-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/desktop-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/desktop-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},

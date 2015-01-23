@@ -111,6 +111,19 @@ img{
     width: 100%;
     vertical-align: middle;
 }
+.header {
+    height: 40px;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    .menu {
+        background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
+        display: block;
+        height: 21px;
+        text-indent: -999999px;
+        width: 30px;
+        -webkit-backface-visibility: hidden;
+    }
+}
 .button-main{
     background: $searsOrange;
     border: none;
@@ -131,9 +144,9 @@ section,
     width: 100%;
 }
 nav {
-    background: #142856 url('../img/menuBack.jpg') no-repeat 0 0;
+    background: #142856 url('../img/menuBackW.jpg') no-repeat 0 0;
     background-size: cover;
-    color: white;
+    color: $searsBlueMain;
     font-family: $openSansReg;
     padding-top: 40px;
     z-index: 1;
@@ -184,9 +197,9 @@ nav {
         background-position: 0 -197px;
     }
     .current {
-        border-bottom: 1px black solid;
-        border-top: 1px black solid;
-        color: black;
+        border-bottom: 1px $searsOrange solid;
+        border-top: 1px $searsOrange solid;
+        color: $searsOrange;
     }
 }
 #prefStore {
@@ -215,7 +228,7 @@ nav {
 }
 section {
     background: blue;
-
+    display: block;
     z-index: 2;
 
     -webkit-transition: all 500ms ease;
@@ -261,6 +274,7 @@ article {
 }
 .lowerScreen {
     -webkit-transform: scale(.6) translateX(80%);
+    box-shadow: 0 0 15px black;
 }
 #cover {
     z-index: 3;
