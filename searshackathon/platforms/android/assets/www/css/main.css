@@ -97,12 +97,33 @@ header {
   -webkit-backface-visibility: hidden;
   z-index: 10; }
   header .menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
     display: block;
     height: 21px;
     text-indent: -999999px;
     width: 30px;
     -webkit-backface-visibility: hidden; }
+  header .smallPoints {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    color: white;
+    text-align: right; }
+    header .smallPoints:last-child {
+      margin-right: 0; }
+  header .couponIcon {
+    background: transparent url("../img/menuIcons.png") no-repeat 0 -144px;
+    display: block;
+    float: right;
+    height: 20px;
+    width: 25px; }
 
 .button-main {
   float: left;
@@ -274,17 +295,74 @@ section {
   box-shadow: 0 0 15px black; }
 
 #cover {
-  z-index: 3; }
+  z-index: 100; }
 
 /* articles */
 article {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background: #152850 url("../img/contentBack.png") no-repeat 0 0;
   background-size: cover;
-  height: 100%;
   width: 100%;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  position: relative;
+  z-index: 3; }
+  article.current {
+    z-index: 4; }
   article.off {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: none; }
+  article .tabs {
+    background: white;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    width: 100%; }
+    article .tabs li {
+      border-bottom: transparent 2px solid;
+      float: left;
+      height: 40px;
+      line-height: 38px;
+      text-align: center;
+      width: 33.3333333333%; }
+      article .tabs li.active {
+        border-color: #ff6600; }
+
+.article-header {
+  position: relative; }
+  .article-header img {
+    height: auto;
+    width: 100%; }
+
+.couponList .couponPreview {
+  background: #e2f4fc;
+  border-bottom: #ff6600 2px solid;
+  height: 120px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  width: 96%; }
+  .couponList .couponPreview .imgHold {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
+    .couponList .couponPreview .imgHold:last-child {
+      margin-right: 0; }
+  .couponList .couponPreview img {
+    height: 100px;
+    width: 100px; }
+  .couponList .couponPreview .couponShort {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%; }
+    .couponList .couponPreview .couponShort:last-child {
+      margin-right: 0; }
+  .couponList .couponPreview .couponPrice {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
+    .couponList .couponPreview .couponPrice:last-child {
+      margin-right: 0; }

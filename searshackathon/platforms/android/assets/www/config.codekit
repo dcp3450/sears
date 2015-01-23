@@ -141,6 +141,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/polocoupon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4444,
+		"inputAbbreviatedPath": "\/img\/polocoupon.jpg",
+		"outputAbbreviatedPath": "\/img\/polocoupon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/pontsback.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52683,
+		"inputAbbreviatedPath": "\/img\/pontsback.jpg",
+		"outputAbbreviatedPath": "\/img\/pontsback.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/profileimg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

@@ -60,9 +60,9 @@
 
                 <header>
                     <div class="menu" onclick="menuAction(this)">menu</div>
-                    <div onclick='triggerView("points")' class="smallPoints"></div>
+                    <div onclick='triggerView("points")' class="smallPoints">250<span class="couponIcon"></span></div>
                 </header>
-                <article class="current home">
+                <article class="off home">
                     <div class="wrap user-info">
                         <p class="name">James Anderson</p>
                         <img src="img/profileMain.png">
@@ -90,13 +90,30 @@
                     <!--<p id="nfc-id"></p>-->
 
                 </article>
-
+                <article class="current points">
+                    <div class="article-header">
+                        <img src="img/pontsback.jpg" />
+                    </div>
+                    <ul class="tabs">
+                        <li class="active">Most Recent</li>
+                        <li>Percentage</li>
+                        <li>Points</li>
+                    </ul>
+                    <div class="couponList">
+                        <div class="couponPreview">
+                            <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                            <p class="couponShort">20% off all Polo by Ralph Lauren</p>
+                            <p class="couponPrice">35 Points</p>
+                        </div>
+                    </div>
+                </article>
             </section>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+<!--        <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
+-->
     </body>
 </html>

@@ -119,12 +119,26 @@ header {
     -webkit-backface-visibility: hidden;
     z-index: 10;
     .menu {
+        @include position(absolute, 10px null null 10px);
         background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
         display: block;
         height: 21px;
         text-indent: -999999px;
         width: 30px;
         -webkit-backface-visibility: hidden;
+    }
+    .smallPoints {
+        @include position(absolute, 10px 10px null null);
+        @include span-columns(6);
+        color: white;
+        text-align: right;
+    }
+    .couponIcon {
+        background: transparent url("../img/menuIcons.png") no-repeat 0 -144px;
+        display: block;
+        float: right;
+        height: 20px;
+        width: 25px;
     }
 }
 .button-main{
@@ -285,18 +299,71 @@ section {
     box-shadow: 0 0 15px black;
 }
 #cover {
-    z-index: 3;
+    z-index: 100;
 }
 
 /* articles */
 article {
-    @include position(absolute, null null 0 0);
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
-    height: 100%;
     width: 100%;
     overflow-x: scroll;
+    position: relative;
+    z-index: 3;
+    &.current {
+        z-index: 4;
+    }
     &.off {
+        @include position(absolute, null null 0 0);
         display: none;
+    }
+    .tabs {
+        background: white;
+        height: 40px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px;
+        width: 100%;
+        li {
+            border-bottom: transparent 2px solid;
+            float: left;
+            height: 40px;
+            line-height: 38px;
+            text-align: center;
+            width: (100%/3);
+            &.active {
+                border-color: $searsOrange;
+            }
+        }
+    }
+}
+.article-header {
+    position: relative;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+.couponList {
+    .couponPreview {
+        background: #e2f4fc;
+        border-bottom: $searsOrange 2px solid;
+        height: 120px;
+        margin: 20px auto 0 auto;
+        padding: 10px;
+        width: 96%;
+        .imgHold {
+            @include span-columns(3);
+        }
+        img {
+            height: 100px;
+            width: 100px;
+        }
+        .couponShort {
+            @include span-columns(6);
+        }
+        .couponPrice {
+            @include span-columns(3);
+        }
     }
 }
