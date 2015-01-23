@@ -133,7 +133,7 @@ nav {
     background-size: cover;
     color: white;
     font-family: $openSansReg;
-    padding-top: 60px;
+    padding-top: 40px;
     z-index: 1;
     ul {
         list-style-type: none;
@@ -141,18 +141,33 @@ nav {
         margin: 0;
     }
 }
+#profileTrigger {
+    @include span-columns(7);
+    @include shift(.5);
+    margin-bottom: 80px;
+    .profileimg {
+        @include span-columns(2 of 7);
+        background: #233864;
+        border-radius: 360px;
+        padding: 5px;
+    }
+    img {
+        border-radius: 360px;
+    }
+    .name {
+        @include span-columns(5 of 7);
+        text-transform: uppercase;
+    }
+}
 #menu {
     @include span-columns(7);
+    @include shift(.5);
+    clear: both;
     font-size: 20px;
     line-height: 28px;
-    margin-left: 20px;
     li {
         background: transparent url("../img/menuIcons.png") no-repeat 0 0;
-        margin-bottom: 20px;
         padding: 15px 0 15px 45px;
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
     #home {
         background-position: 0 17px;
@@ -174,24 +189,27 @@ nav {
 }
 #prefStore {
     @include span-columns(7);
+    @include shift(.5);
     clear: both;
-    margin-left: 20px;
     .title {
         font-size: 20px;
         line-height: 28px;
         text-transform: uppercase;
     }
     ul {
-        margin-left: 20px;
+        margin-left: 10px;
         padding-left: 20px;
     }
 }
 #address,
 #phone {
-    background: transparent url("../img/menuIcons.png") no-repeat 0 -567px;
+    background: transparent url("../img/menuIcons.png") no-repeat -6px -567px;
+}
+#address {
+    margin-bottom: 20px;
 }
 #phone {
-    background-position: -29px -647px;
+    background-position: -6px -647px;
 }
 section {
     background: blue;
