@@ -17,19 +17,10 @@
  * under the License.
  */
 /*neat imports*/
-/* Neat 1.7.0
- * http://neat.bourbon.io
- * Copyright 2012-2014 thoughtbot, inc.
- * MIT License */
-html {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
 
 /*NEAT Settings*/
 /* fonts and colors */
@@ -39,20 +30,23 @@ html {
   src: url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff2") format("woff2"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff") format("woff"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.ttf") format("truetype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.svg#alternate_gothic_no2_dregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'gothamBold';
   src: url("fonts/gotham_bold-webfont.eot");
   src: url("fonts/gotham_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gotham_bold-webfont.woff2") format("woff2"), url("fonts/gotham_bold-webfont.woff") format("woff"), url("fonts/gotham_bold-webfont.ttf") format("truetype"), url("fonts/gotham_bold-webfont.svg#gotham_boldregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'openSansRegular';
   src: url("opensans-regular-webfont.eot");
   src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-regular-webfont.woff2") format("woff2"), url("opensans-regular-webfont.woff") format("woff"), url("opensans-regular-webfont.ttf") format("truetype"), url("opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 * {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */ }
 
 body {
@@ -71,12 +65,14 @@ body {
 
 /* Portrait layout (default) */
 .wrap {
+  *zoom: 1;
   max-width: 700;
   margin-left: auto;
   margin-right: auto; }
+  .wrap:before, .wrap:after {
+    content: " ";
+    display: table; }
   .wrap:after {
-    content: "";
-    display: table;
     clear: both; }
 
 h1, p {
@@ -125,10 +121,10 @@ nav {
     margin: 0; }
 
 #menu {
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 57.3509785009%;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
   font-size: 20px;
   line-height: 28px;
   margin-left: 20px; }
@@ -154,10 +150,10 @@ nav {
     color: black; }
 
 #prefStore {
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 57.3509785009%;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
   clear: both;
   margin-left: 20px; }
   #prefStore:last-child {
