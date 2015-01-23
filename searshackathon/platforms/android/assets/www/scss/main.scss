@@ -109,6 +109,7 @@ nav {
     background: #142856 url('../img/menuBack.jpg') no-repeat 0 0;
     background-size: cover;
     color: white;
+    font-family: $openSansReg;
     padding-top: 60px;
     z-index: 1;
     ul {
@@ -118,7 +119,30 @@ nav {
     }
 }
 #menu {
-    @include span-columns(6);
+    @include span-columns(7);
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 20px;
+    li {
+        background: transparent url("../img/menuIcons.png") no-repeat 0 0;
+        margin-bottom: 20px;
+        padding: 15px 0 15px 45px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    #home {
+        background-position: 0 17px;
+    }
+    #points {
+        background-position: 0 -53px;
+    }
+    #coupons {
+        background-position: 0 -125px;
+    }
+    #notify {
+        background-position: 0 -197px;
+    }
     .current {
         border-bottom: 1px black solid;
         border-top: 1px black solid;
@@ -126,8 +150,25 @@ nav {
     }
 }
 #prefStore {
-    @include span-columns(6);
+    @include span-columns(7);
     clear: both;
+    margin-left: 20px;
+    .title {
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+    ul {
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+}
+#address,
+#phone {
+    background: transparent url("../img/menuIcons.png") no-repeat 0 -570px;
+}
+#phone {
+
 }
 section {
     background: blue;
@@ -142,7 +183,7 @@ article {
     width: 100%;
 }
 .lowerScreen {
-    -webkit-transform: scale(.6) translateX(60%);
+    -webkit-transform: scale(.6) translateX(80%);
 }
 #cover {
     z-index: 3;

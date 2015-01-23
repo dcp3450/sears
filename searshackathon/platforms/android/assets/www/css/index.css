@@ -92,6 +92,7 @@ nav {
   background: #142856 url("../img/menuBack.jpg") no-repeat 0 0;
   background-size: cover;
   color: white;
+  font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
   padding-top: 60px;
   z-index: 1; }
   nav ul {
@@ -103,9 +104,26 @@ nav {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 48.821174201%; }
+  width: 57.3509785009%;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 20px; }
   #menu:last-child {
     margin-right: 0; }
+  #menu li {
+    background: transparent url("../img/menuIcons.png") no-repeat 0 0;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 45px; }
+    #menu li:last-child {
+      margin-bottom: 0; }
+  #menu #home {
+    background-position: 0 17px; }
+  #menu #points {
+    background-position: 0 -53px; }
+  #menu #coupons {
+    background-position: 0 -125px; }
+  #menu #notify {
+    background-position: 0 -197px; }
   #menu .current {
     border-bottom: 1px black solid;
     border-top: 1px black solid;
@@ -115,10 +133,22 @@ nav {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 48.821174201%;
-  clear: both; }
+  width: 57.3509785009%;
+  clear: both;
+  margin-left: 20px; }
   #prefStore:last-child {
     margin-right: 0; }
+  #prefStore .title {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase; }
+  #prefStore ul {
+    margin-left: 20px;
+    padding-left: 20px; }
+
+#address,
+#phone {
+  background: transparent url("../img/menuIcons.png") no-repeat 0 -570px; }
 
 section {
   background: blue;
@@ -132,7 +162,7 @@ article {
   width: 100%; }
 
 .lowerScreen {
-  -webkit-transform: scale(0.6) translateX(60%); }
+  -webkit-transform: scale(0.6) translateX(80%); }
 
 #cover {
   z-index: 3; }
