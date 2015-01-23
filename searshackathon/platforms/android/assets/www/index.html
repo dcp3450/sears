@@ -88,21 +88,10 @@
                 </article>
             </section>
         </div>
-        <!--<script type="text/javascript" src="cordova.js"></script>-->
-        <!--<script type="text/javascript" src="js/index.js"></script>-->
-        <!--<script type="text/javascript">-->
-            <!--app.initialize();-->
-        <!--</script>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            function menuAction(e){
-    e.parentNode.parentNode.className = "lowerScreen";
-    e.parentNode.parentNode.innerHTML = e.parentNode.parentNode.innerHTML+'<div id="cover" onclick="menuClose(this)"></div>';
-}
-
-function menuClose(e) {
-    e.parentNode.className = "";
-    e.remove();
-}
+            app.initialize();
         </script>
     </body>
 </html>
