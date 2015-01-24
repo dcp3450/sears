@@ -27,6 +27,9 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+
+
         <title>Hello World</title>
     </head>
     <body>
@@ -36,7 +39,7 @@
                     <div class="profileimg">
                         <img src="img/profileimg.jpg" />
                     </div>
-                    <p class="name">Jame Anderson</p>
+                    <p class="name">James Anderson</p>
                 </div>
                 <ul id="menu">
                     <li onclick='triggerView("home")' id="home" class="current">Home</li>
@@ -72,8 +75,15 @@
                     </div>
                     <div class="wrap">
                         <button onclick='triggerView("points")' class="button-main">Redeem Points</button>
-                        <button onclick='triggerView("deals")' class="button-main">My deals</button>
+                        <button onclick='triggerView("deals")' class="button-main">My Coupons</button>
+
                     </div>
+                    <!--page transiton -->
+                    <div id="deals-expand" class="expand-circle">
+
+                    </div>
+
+
                     <div class="panel">
                         <img src="img/hardwoodPanel.jpg">
                         <p>Hardwood</p>
@@ -88,6 +98,9 @@
                     </div>
 
                     <!--<p id="nfc-id"></p>-->
+
+                </article>
+                <article class="off">
 
                 </article>
 
@@ -306,12 +319,23 @@
                 </div>
             </section>
         </div>
+<<<<<<< HEAD
         <script type="text/javascript" src="js/desktop.js"></script>
           <!-- <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>-->
+=======
 
-   </body>
+
+    </body>
+        <!-- <script type="text/javascript" src="js/desktop.js"></script>-->
+         <script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+         <script type="text/javascript">
+             app.initialize();
+         </script>
+>>>>>>> 9c95c0902bc88689d27d2b4e0b924c019122d6d1
+
 </html>
