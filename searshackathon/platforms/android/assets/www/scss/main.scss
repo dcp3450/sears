@@ -431,31 +431,23 @@ section {
 
 /* articles */
 article {
-<<<<<<< HEAD
     @include position(absolute, 0 0 0px 0px);
-=======
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
     width: 100%;
     overflow-x: scroll;
-<<<<<<< HEAD
     padding-top: 60px;
-=======
     padding-top: 40px;
     position: relative;
     z-index: 3;
     &.current {
         z-index: 4;
     }
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
     &.off {
         @include position(absolute, null null 0 0);
         display: none;
     }
-<<<<<<< HEAD
 }
-=======
     .tabs {
         background: white;
         height: 40px;
@@ -558,4 +550,3 @@ article {
         }
     }
 }
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4

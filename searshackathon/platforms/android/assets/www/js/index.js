@@ -153,7 +153,6 @@ function expandView(target){
     viewFadeOut(viewToExpand);
 }
 
-<<<<<<< HEAD
 function viewFadeOut(view){
     var viewToFadeOut = view;
     console.log(view);
@@ -196,7 +195,6 @@ var addRippleEffect = function (e) {
 }
 
 document.addEventListener('click', addRippleEffect, false);
-=======
 function triggerPopup(type){
     document.getElementById('popup').className = "show";
 }
@@ -204,4 +202,3 @@ function triggerPopup(type){
 function closePopup(){
     document.getElementById('popup').className = "";
 }
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4

@@ -13,7 +13,6 @@ function menuClose(e,callback) {
     var nodeContainer = e.parentNode;
     nodeContainer.className = "";
     e.remove();
-<<<<<<< HEAD
 }
 
 function triggerView(view){
@@ -86,7 +85,6 @@ var addRippleEffect = function (e) {
 }
 
 document.addEventListener('click', addRippleEffect, false);
-=======
     callback(nodeContainer);
 }
 
@@ -101,4 +99,3 @@ function triggerPopup(type){
 function closePopup(){
     document.getElementById('popup').className = "";
 }
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
