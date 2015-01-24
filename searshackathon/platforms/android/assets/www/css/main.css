@@ -17,10 +17,19 @@
  * under the License.
  */
 /*neat imports*/
-* {
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 /*NEAT Settings*/
 /* fonts and colors */
@@ -30,23 +39,20 @@
   src: url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff2") format("woff2"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff") format("woff"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.ttf") format("truetype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.svg#alternate_gothic_no2_dregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'gothamBold';
   src: url("fonts/gotham_bold-webfont.eot");
   src: url("fonts/gotham_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gotham_bold-webfont.woff2") format("woff2"), url("fonts/gotham_bold-webfont.woff") format("woff"), url("fonts/gotham_bold-webfont.ttf") format("truetype"), url("fonts/gotham_bold-webfont.svg#gotham_boldregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'openSansRegular';
   src: url("opensans-regular-webfont.eot");
   src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-regular-webfont.woff2") format("woff2"), url("opensans-regular-webfont.woff") format("woff"), url("opensans-regular-webfont.ttf") format("truetype"), url("opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */ }
 
 body {
@@ -65,14 +71,12 @@ body {
 
 /* Portrait layout (default) */
 .wrap {
-  *zoom: 1;
   max-width: 700;
   margin-left: auto;
   margin-right: auto; }
-  .wrap:before, .wrap:after {
-    content: " ";
-    display: table; }
   .wrap:after {
+    content: "";
+    display: table;
     clear: both; }
 
 h1, p {
@@ -126,10 +130,10 @@ header {
 button {
   position: relative;
   display: block;
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
   border: none;
   outline: none;
   font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
@@ -177,13 +181,11 @@ button {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0; } }
-
 @keyframes ripple {
   to {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0; } }
-
 /** Button Click Transitions **/
 .expand-circle {
   -webkit-transition: all 1s ease-out;
@@ -218,14 +220,11 @@ button {
     top: -32.5%;
     left: -75%;
     opacity: 1; } }
-
 @-webkit-keyframes fullscreenGone {
   0% {
     opacity: 1; }
-
   100% {
     opacity: 0; } }
-
 nav,
 section,
 #cover {
@@ -248,26 +247,19 @@ nav {
     margin: 0; }
 
 #profileTrigger {
-  display: block;
-<<<<<<< HEAD
   float: left;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 4.2649%;
-  margin-bottom: 80px; }
-=======
+  display: block;
   margin-right: 2.3576515979%;
   width: 57.3509785009%;
   margin-left: 4.2649021499%;
   margin-bottom: 65px; }
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
   #profileTrigger:last-child {
     margin-right: 0; }
   #profileTrigger .profileimg {
-    display: block;
     float: left;
-    margin-right: 4.11092%;
-    width: 25.63506%;
+    display: block;
+    margin-right: 4.1109178249%;
+    width: 25.6350586965%;
     background: #233864;
     border-radius: 360px;
     padding: 3px; }
@@ -276,26 +268,21 @@ nav {
   #profileTrigger img {
     border-radius: 360px; }
   #profileTrigger .name {
-    display: block;
-<<<<<<< HEAD
     float: left;
-    margin-right: 4.11092%;
-    width: 70.25402%;
-=======
+    display: block;
     margin-right: 4.1109178249%;
     width: 70.2540234786%;
     color: #152850;
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
     text-transform: uppercase; }
     #profileTrigger .name:last-child {
       margin-right: 0; }
 
 #menu {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 4.2649%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  margin-left: 4.2649021499%;
   clear: both;
   font-size: 20px;
   line-height: 28px; }
@@ -339,11 +326,11 @@ nav {
     width: 14px; }
 
 #prefStore {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 4.2649%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  margin-left: 4.2649021499%;
   clear: both; }
   #prefStore:last-child {
     margin-right: 0; }
@@ -377,11 +364,11 @@ section {
   -webkit-transition: all 500ms ease; }
 
 .user-info img {
-  display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 40.29137%;
-  margin-left: 29.85432%;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%;
+  margin-left: 29.8543150494%;
   margin-bottom: 10px; }
   .user-info img:last-child {
     margin-right: 0; }
@@ -420,25 +407,19 @@ section {
 
 /* articles */
 article {
-<<<<<<< HEAD
   position: absolute;
   bottom: 0px;
   left: 0px;
-=======
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
   background: #152850 url("../img/contentBack.png") no-repeat 0 0;
   background-size: cover;
   width: 100%;
   overflow-x: scroll;
-<<<<<<< HEAD
-  padding-top: 60px; }
-=======
+  padding-top: 60px;
   padding-top: 40px;
   position: relative;
   z-index: 3; }
   article.current {
     z-index: 4; }
->>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
   article.off {
     position: absolute;
     bottom: 0;
@@ -514,6 +495,8 @@ article {
     right: 0;
     background: #e2f4fc;
     border-bottom: #ff6600 2px solid; }
+    .dealList .dealPreview .dealCover.dealLink {
+      position: relative; }
   .dealList .dealPreview .dealConfirm {
     border-bottom: #34b06c 2px solid; }
   .dealList .dealPreview .dealCover,
@@ -537,7 +520,7 @@ article {
   padding-top: 40px;
   z-index: 50;
   -webkit-transition: all 300ms ease;
-  height: 250px; }
+  min-height: 100%; }
   #popup header {
     left: 100%;
     -webkit-transition: all 300ms ease; }
@@ -545,3 +528,37 @@ article {
     left: 0%; }
     #popup.show header {
       left: 0%; }
+  #popup .article-header {
+    margin-bottom: 66px; }
+  #popup .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -16%;
+    width: 32%; }
+  #popup .details,
+  #popup .notice {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+    color: #152850;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    text-align: center; }
+    #popup .details:last-child,
+    #popup .notice:last-child {
+      margin-right: 0; }
+  #popup .barcode {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    margin-left: 25.5894128995%; }
+    #popup .barcode:last-child {
+      margin-right: 0; }
+  #popup .notice {
+    clear: both;
+    color: #4684bf; }

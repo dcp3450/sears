@@ -431,7 +431,7 @@ section {
 
 /* articles */
 article {
-    @include position(absolute, 0 0 0px 0px);
+    @include position(absolute, null null 0px 0px);
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
     width: 100%;
@@ -447,7 +447,6 @@ article {
         @include position(absolute, null null 0 0);
         display: none;
     }
-}
     .tabs {
         background: white;
         height: 40px;
@@ -510,6 +509,9 @@ article {
             @include position(absolute,0 0 null null);
             background: #e2f4fc;
             border-bottom: $searsOrange 2px solid;
+            &.dealLink {
+                position: relative;
+            }
         }
         .dealConfirm {
             border-bottom: $confirmGreen 2px solid;
@@ -538,7 +540,7 @@ article {
     padding-top: 40px;
     z-index: 50;
     -webkit-transition: all 300ms ease;
-    height: 250px;
+    min-height: 100%;
     header {
         left: 100%;
         -webkit-transition: all 300ms ease;
@@ -548,5 +550,33 @@ article {
         header {
             left: 0%;
         }
+    }
+    .article-header {
+        margin-bottom: 66px;
+    }
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -16%;
+        width: 32%;
+    }
+    .details,
+    .notice{
+        @include span-columns(10);
+        @include shift(1);
+        color: $searsBlueMain;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .barcode {
+        @include span-columns(6);
+        @include shift(3);
+    }
+    .notice {
+        clear: both;
+        color: #4684bf;
     }
 }

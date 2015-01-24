@@ -13,6 +13,8 @@ function menuClose(e,callback) {
     var nodeContainer = e.parentNode;
     nodeContainer.className = "";
     e.remove();
+
+    callback(nodeContainer);
 }
 
 function triggerView(view){
@@ -85,8 +87,6 @@ var addRippleEffect = function (e) {
 }
 
 document.addEventListener('click', addRippleEffect, false);
-    callback(nodeContainer);
-}
 
 function triggerView(view){
 
