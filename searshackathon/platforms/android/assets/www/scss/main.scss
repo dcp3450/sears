@@ -75,6 +75,7 @@ $openSansReg: normal normal 400 14px/17px 'openSansRegular',helvetica, arial, sa
 
 $searsOrange: #ff6600;
 $searsBlueMain: #152850;
+$confirmGreen: #34b06c;
 
 
 * {
@@ -86,7 +87,7 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background: #fff;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font: $openSansReg;
     height:100%;
     margin:0px;
     padding:0px;
@@ -134,7 +135,7 @@ header {
         text-align: right;
     }
     .couponIcon {
-        background: transparent url("../img/menuIcons.png") no-repeat 0 -144px;
+        background: transparent url("../img/menuIcons.png") no-repeat 0 -1202px;
         display: block;
         float: right;
         height: 20px;
@@ -180,18 +181,19 @@ nav {
 #profileTrigger {
     @include span-columns(7);
     @include shift(.5);
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     .profileimg {
         @include span-columns(2 of 7);
         background: #233864;
         border-radius: 360px;
-        padding: 5px;
+        padding: 3px;
     }
     img {
         border-radius: 360px;
     }
     .name {
         @include span-columns(5 of 7);
+        color: $searsBlueMain;
         text-transform: uppercase;
     }
 }
@@ -203,24 +205,51 @@ nav {
     line-height: 28px;
     li {
         background: transparent url("../img/menuIcons.png") no-repeat 0 0;
-        padding: 15px 0 15px 45px;
+        margin-bottom: 5px;
+        padding: 5px 0 5px 45px;
+        &:last-child {
+            margin: 0;
+        }
     }
     #home {
-        background-position: 0 17px;
+        background-position: 0 7px;
+        &.current {
+            background-position: 0 -601px;
+        }
     }
     #points {
-        background-position: 0 -53px;
+        background-position: 0 -91px;
+        &.current {
+            background-position: 0 -701px;
+        }
     }
     #coupons {
-        background-position: 0 -125px;
+        background-position: 0 -187px;
+        &.current {
+            background-position: 0 -795px;
+        }
     }
     #notify {
-        background-position: 0 -197px;
+        background-position: 0 -287px;
+        &.current {
+            background-position: 0 -894px;
+        }
     }
     .current {
-        border-bottom: 1px $searsOrange solid;
-        border-top: 1px $searsOrange solid;
-        color: $searsOrange;
+        border-bottom: 1px #7d7d7d solid;
+        border-top: 1px #7d7d7d solid;
+        color: #7d7d7d;
+    }
+    .counter {
+        background: $searsOrange;
+        border-radius: 180px;
+        color: white;
+        display: inline-block;
+        height: 14px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        width: 14px;
     }
 }
 #prefStore {
@@ -228,6 +257,7 @@ nav {
     @include shift(.5);
     clear: both;
     .title {
+        color: $searsBlueMain;
         font-size: 20px;
         line-height: 28px;
         text-transform: uppercase;
@@ -239,16 +269,17 @@ nav {
 }
 #address,
 #phone {
-    background: transparent url("../img/menuIcons.png") no-repeat -6px -567px;
+    background: transparent url("../img/menuIcons.png") no-repeat -5px -393px;
 }
 #address {
     margin-bottom: 20px;
 }
 #phone {
-    background-position: -6px -647px;
+    background-position: -6px -492px;
+    padding: 2px 0;
 }
 section {
-    background: blue;
+
     display: block;
     z-index: 2;
 
@@ -304,7 +335,7 @@ section {
 
 /* articles */
 article {
-    background: #152850 url('../img/contentBack.png') no-repeat 0 0;
+background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
     width: 100%;
     overflow-x: scroll;
@@ -338,6 +369,7 @@ article {
     }
 }
 .article-header {
+    margin-bottom: 10px;
     position: relative;
     img {
         height: auto;
@@ -346,24 +378,47 @@ article {
 }
 .couponList {
     .couponPreview {
-        background: #e2f4fc;
-        border-bottom: $searsOrange 2px solid;
-        height: 120px;
-        margin: 20px auto 0 auto;
-        padding: 10px;
+        background: $confirmGreen;
+        float: left;
+        margin: 10px 2% 0 2%;
+        position: relative;
         width: 96%;
         .imgHold {
             @include span-columns(3);
         }
         img {
-            height: 100px;
-            width: 100px;
+            height: auto;
+            width: 100%;
         }
         .couponShort {
             @include span-columns(6);
+            color: $searsBlueMain;
         }
-        .couponPrice {
+        .couponPrice,
+        .confirmText{
             @include span-columns(3);
+            color: $searsBlueMain;
+            font: $gothamBold;
+            line-height: 70px;
+            margin: 0;
+            text-align: right;
+        }
+        .confirmText {
+            color: white;
+        }
+        .couponCover {
+            @include position(absolute,0 0 null null);
+            background: #e2f4fc;
+            border-bottom: $searsOrange 2px solid;
+        }
+        .couponConfirm {
+            border-bottom: $confirmGreen 2px solid;
+        }
+        .couponCover,
+        .couponConfirm {
+            float: left;
+            padding: 10px;
+            width: 100%;
         }
     }
 }
