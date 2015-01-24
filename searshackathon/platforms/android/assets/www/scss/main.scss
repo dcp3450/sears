@@ -75,6 +75,8 @@ $openSansReg: normal normal 400 14px/17px 'openSansRegular',helvetica, arial, sa
 
 $searsOrange: #ff6600;
 $searsBlueMain: #152850;
+$confirmGreen: #34b06c;
+$confirmRed: #e43939;
 
 
 * {
@@ -86,7 +88,7 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background: #fff;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font: $openSansReg;
     height:100%;
     margin:0px;
     padding:0px;
@@ -112,19 +114,33 @@ img{
     vertical-align: middle;
 }
 header {
+    @include position(fixed,0 null null 0);
     background: #4684bf;
     height: 40px;
-    position: relative;
     width: 100%;
     -webkit-backface-visibility: hidden;
     z-index: 10;
     .menu {
-        background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
+        @include position(absolute, 10px null null 10px);
+        //background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
         display: block;
         height: 21px;
         text-indent: -999999px;
         width: 30px;
         -webkit-backface-visibility: hidden;
+    }
+    .smallPoints {
+        @include position(absolute, 10px 10px null null);
+        @include span-columns(6);
+        color: white;
+        text-align: right;
+    }
+    .dealIcon {
+        background: transparent url("../img/menuIcons.png") no-repeat 0 -1202px;
+        display: block;
+        float: right;
+        height: 20px;
+        width: 25px;
     }
 }
 /** BUTTONS **/
@@ -259,18 +275,19 @@ nav {
 #profileTrigger {
     @include span-columns(7);
     @include shift(.5);
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     .profileimg {
         @include span-columns(2 of 7);
         background: #233864;
         border-radius: 360px;
-        padding: 5px;
+        padding: 3px;
     }
     img {
         border-radius: 360px;
     }
     .name {
         @include span-columns(5 of 7);
+        color: $searsBlueMain;
         text-transform: uppercase;
     }
 }
@@ -282,24 +299,51 @@ nav {
     line-height: 28px;
     li {
         background: transparent url("../img/menuIcons.png") no-repeat 0 0;
-        padding: 15px 0 15px 45px;
+        margin-bottom: 5px;
+        padding: 5px 0 5px 45px;
+        &:last-child {
+            margin: 0;
+        }
     }
     #home {
-        background-position: 0 17px;
+        background-position: 0 7px;
+        &.current {
+            background-position: 0 -601px;
+        }
     }
     #points {
-        background-position: 0 -53px;
+        background-position: 0 -91px;
+        &.current {
+            background-position: 0 -701px;
+        }
     }
-    #coupons {
-        background-position: 0 -125px;
+    #deals {
+        background-position: 0 -187px;
+        &.current {
+            background-position: 0 -795px;
+        }
     }
     #notify {
-        background-position: 0 -197px;
+        background-position: 0 -287px;
+        &.current {
+            background-position: 0 -894px;
+        }
     }
     .current {
-        border-bottom: 1px $searsOrange solid;
-        border-top: 1px $searsOrange solid;
-        color: $searsOrange;
+        border-bottom: 1px #7d7d7d solid;
+        border-top: 1px #7d7d7d solid;
+        color: #7d7d7d;
+    }
+    .counter {
+        background: $searsOrange;
+        border-radius: 180px;
+        color: white;
+        display: inline-block;
+        height: 14px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        width: 14px;
     }
 }
 #prefStore {
@@ -307,9 +351,14 @@ nav {
     @include shift(.5);
     clear: both;
     .title {
+        color: $searsBlueMain;
         font-size: 20px;
         line-height: 28px;
         text-transform: uppercase;
+        span {
+            float: right;
+            font-size: 10px;
+        }
     }
     ul {
         margin-left: 10px;
@@ -318,19 +367,19 @@ nav {
 }
 #address,
 #phone {
-    background: transparent url("../img/menuIcons.png") no-repeat -6px -567px;
+    background: transparent url("../img/menuIcons.png") no-repeat -5px -393px;
 }
 #address {
     margin-bottom: 20px;
 }
 #phone {
-    background-position: -6px -647px;
+    background-position: -6px -492px;
+    padding: 2px 0;
 }
 section {
-    background: blue;
+    box-shadow: 0 0 15px black;
     display: block;
     z-index: 2;
-
     -webkit-transition: all 500ms ease;
 }
 .user-info{
@@ -375,22 +424,138 @@ section {
 }
 .lowerScreen {
     -webkit-transform: scale(.6) translateX(80%);
-    box-shadow: 0 0 15px black;
 }
 #cover {
-    z-index: 3;
+    z-index: 100;
 }
 
 /* articles */
 article {
+<<<<<<< HEAD
     @include position(absolute, 0 0 0px 0px);
+=======
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
-    height: 100%;
     width: 100%;
     overflow-x: scroll;
+<<<<<<< HEAD
     padding-top: 60px;
+=======
+    padding-top: 40px;
+    position: relative;
+    z-index: 3;
+    &.current {
+        z-index: 4;
+    }
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
     &.off {
+        @include position(absolute, null null 0 0);
         display: none;
     }
+<<<<<<< HEAD
 }
+=======
+    .tabs {
+        background: white;
+        height: 40px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+        li {
+            border-bottom: transparent 2px solid;
+            float: left;
+            height: 40px;
+            line-height: 38px;
+            text-align: center;
+            width: (100%/3);
+            &.active {
+                border-color: $searsOrange;
+            }
+        }
+    }
+}
+.article-header {
+    margin-bottom: 10px;
+    position: relative;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+.dealList {
+    .dealPreview {
+        background: $confirmGreen;
+        float: left;
+        margin: 10px 2% 0 2%;
+        position: relative;
+        width: 96%;
+        .imgHold {
+            @include span-columns(3);
+        }
+        img {
+            height: auto;
+            width: 100%;
+        }
+        .dealShort {
+            @include span-columns(6);
+            color: $searsBlueMain;
+        }
+        .dealPrice,
+        .confirmText{
+            @include span-columns(3);
+            color: $searsBlueMain;
+            font: $gothamBold;
+            line-height: 70px;
+            margin: 0;
+            text-align: right;
+        }
+        .confirmText {
+            color: white;
+        }
+        .dealCover {
+            @include position(absolute,0 0 null null);
+            background: #e2f4fc;
+            border-bottom: $searsOrange 2px solid;
+        }
+        .dealConfirm {
+            border-bottom: $confirmGreen 2px solid;
+        }
+        .dealCover,
+        .dealConfirm {
+            float: left;
+            padding: 10px;
+            width: 100%;
+        }
+        &.dealDelete {
+            background: $confirmRed;
+            .dealConfirm {
+                border-bottom: $confirmRed 2px solid;
+            }
+        }
+    }
+}
+
+/* pop up */
+#popup {
+    @include position(absolute,0 null null 100%);
+    background: #dcdcdc;
+    width: 100%;
+    overflow-x: scroll;
+    padding-top: 40px;
+    z-index: 50;
+    -webkit-transition: all 300ms ease;
+    height: 250px;
+    header {
+        left: 100%;
+        -webkit-transition: all 300ms ease;
+    }
+    &.show {
+        left: 0%;
+        header {
+            left: 0%;
+        }
+    }
+}
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4

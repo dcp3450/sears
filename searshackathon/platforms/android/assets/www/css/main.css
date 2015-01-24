@@ -57,7 +57,7 @@ body {
   -webkit-user-select: none;
   /* prevent copy paste, to allow, change 'none' to 'text' */
   background: #fff;
-  font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -86,19 +86,41 @@ img {
   vertical-align: middle; }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #4684bf;
   height: 40px;
-  position: relative;
   width: 100%;
   -webkit-backface-visibility: hidden;
   z-index: 10; }
   header .menu {
-    background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: block;
     height: 21px;
     text-indent: -999999px;
     width: 30px;
     -webkit-backface-visibility: hidden; }
+  header .smallPoints {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    color: white;
+    text-align: right; }
+    header .smallPoints:last-child {
+      margin-right: 0; }
+  header .dealIcon {
+    background: transparent url("../img/menuIcons.png") no-repeat 0 -1202px;
+    display: block;
+    float: right;
+    height: 20px;
+    width: 25px; }
 
 /** BUTTONS **/
 button {
@@ -227,11 +249,18 @@ nav {
 
 #profileTrigger {
   display: block;
+<<<<<<< HEAD
   float: left;
   margin-right: 2.35765%;
   width: 57.35098%;
   margin-left: 4.2649%;
   margin-bottom: 80px; }
+=======
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%;
+  margin-left: 4.2649021499%;
+  margin-bottom: 65px; }
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
   #profileTrigger:last-child {
     margin-right: 0; }
   #profileTrigger .profileimg {
@@ -241,16 +270,22 @@ nav {
     width: 25.63506%;
     background: #233864;
     border-radius: 360px;
-    padding: 5px; }
+    padding: 3px; }
     #profileTrigger .profileimg:last-child {
       margin-right: 0; }
   #profileTrigger img {
     border-radius: 360px; }
   #profileTrigger .name {
     display: block;
+<<<<<<< HEAD
     float: left;
     margin-right: 4.11092%;
     width: 70.25402%;
+=======
+    margin-right: 4.1109178249%;
+    width: 70.2540234786%;
+    color: #152850;
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
     text-transform: uppercase; }
     #profileTrigger .name:last-child {
       margin-right: 0; }
@@ -268,19 +303,40 @@ nav {
     margin-right: 0; }
   #menu li {
     background: transparent url("../img/menuIcons.png") no-repeat 0 0;
-    padding: 15px 0 15px 45px; }
+    margin-bottom: 5px;
+    padding: 5px 0 5px 45px; }
+    #menu li:last-child {
+      margin: 0; }
   #menu #home {
-    background-position: 0 17px; }
+    background-position: 0 7px; }
+    #menu #home.current {
+      background-position: 0 -601px; }
   #menu #points {
-    background-position: 0 -53px; }
-  #menu #coupons {
-    background-position: 0 -125px; }
+    background-position: 0 -91px; }
+    #menu #points.current {
+      background-position: 0 -701px; }
+  #menu #deals {
+    background-position: 0 -187px; }
+    #menu #deals.current {
+      background-position: 0 -795px; }
   #menu #notify {
-    background-position: 0 -197px; }
+    background-position: 0 -287px; }
+    #menu #notify.current {
+      background-position: 0 -894px; }
   #menu .current {
-    border-bottom: 1px #ff6600 solid;
-    border-top: 1px #ff6600 solid;
-    color: #ff6600; }
+    border-bottom: 1px #7d7d7d solid;
+    border-top: 1px #7d7d7d solid;
+    color: #7d7d7d; }
+  #menu .counter {
+    background: #ff6600;
+    border-radius: 180px;
+    color: white;
+    display: inline-block;
+    height: 14px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    width: 14px; }
 
 #prefStore {
   display: block;
@@ -292,25 +348,30 @@ nav {
   #prefStore:last-child {
     margin-right: 0; }
   #prefStore .title {
+    color: #152850;
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase; }
+    #prefStore .title span {
+      float: right;
+      font-size: 10px; }
   #prefStore ul {
     margin-left: 10px;
     padding-left: 20px; }
 
 #address,
 #phone {
-  background: transparent url("../img/menuIcons.png") no-repeat -6px -567px; }
+  background: transparent url("../img/menuIcons.png") no-repeat -5px -393px; }
 
 #address {
   margin-bottom: 20px; }
 
 #phone {
-  background-position: -6px -647px; }
+  background-position: -6px -492px;
+  padding: 2px 0; }
 
 section {
-  background: blue;
+  box-shadow: 0 0 15px black;
   display: block;
   z-index: 2;
   -webkit-transition: all 500ms ease; }
@@ -352,22 +413,135 @@ section {
     text-transform: uppercase; }
 
 .lowerScreen {
-  -webkit-transform: scale(0.6) translateX(80%);
-  box-shadow: 0 0 15px black; }
+  -webkit-transform: scale(0.6) translateX(80%); }
 
 #cover {
-  z-index: 3; }
+  z-index: 100; }
 
 /* articles */
 article {
+<<<<<<< HEAD
   position: absolute;
   bottom: 0px;
   left: 0px;
+=======
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
   background: #152850 url("../img/contentBack.png") no-repeat 0 0;
   background-size: cover;
-  height: 100%;
   width: 100%;
   overflow-x: scroll;
+<<<<<<< HEAD
   padding-top: 60px; }
+=======
+  padding-top: 40px;
+  position: relative;
+  z-index: 3; }
+  article.current {
+    z-index: 4; }
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
   article.off {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: none; }
+  article .tabs {
+    background: white;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%; }
+    article .tabs li {
+      border-bottom: transparent 2px solid;
+      float: left;
+      height: 40px;
+      line-height: 38px;
+      text-align: center;
+      width: 33.3333333333%; }
+      article .tabs li.active {
+        border-color: #ff6600; }
+
+.article-header {
+  margin-bottom: 10px;
+  position: relative; }
+  .article-header img {
+    height: auto;
+    width: 100%; }
+
+.dealList .dealPreview {
+  background: #34b06c;
+  float: left;
+  margin: 10px 2% 0 2%;
+  position: relative;
+  width: 96%; }
+  .dealList .dealPreview .imgHold {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
+    .dealList .dealPreview .imgHold:last-child {
+      margin-right: 0; }
+  .dealList .dealPreview img {
+    height: auto;
+    width: 100%; }
+  .dealList .dealPreview .dealShort {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    color: #152850; }
+    .dealList .dealPreview .dealShort:last-child {
+      margin-right: 0; }
+  .dealList .dealPreview .dealPrice,
+  .dealList .dealPreview .confirmText {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%;
+    color: #152850;
+    font: normal normal 700 14px/17px "gothamBold", helvetica, arial, sans-serif;
+    line-height: 70px;
+    margin: 0;
+    text-align: right; }
+    .dealList .dealPreview .dealPrice:last-child,
+    .dealList .dealPreview .confirmText:last-child {
+      margin-right: 0; }
+  .dealList .dealPreview .confirmText {
+    color: white; }
+  .dealList .dealPreview .dealCover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e2f4fc;
+    border-bottom: #ff6600 2px solid; }
+  .dealList .dealPreview .dealConfirm {
+    border-bottom: #34b06c 2px solid; }
+  .dealList .dealPreview .dealCover,
+  .dealList .dealPreview .dealConfirm {
+    float: left;
+    padding: 10px;
+    width: 100%; }
+  .dealList .dealPreview.dealDelete {
+    background: #e43939; }
+    .dealList .dealPreview.dealDelete .dealConfirm {
+      border-bottom: #e43939 2px solid; }
+
+/* pop up */
+#popup {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #dcdcdc;
+  width: 100%;
+  overflow-x: scroll;
+  padding-top: 40px;
+  z-index: 50;
+  -webkit-transition: all 300ms ease;
+  height: 250px; }
+  #popup header {
+    left: 100%;
+    -webkit-transition: all 300ms ease; }
+  #popup.show {
+    left: 0%; }
+    #popup.show header {
+      left: 0%; }

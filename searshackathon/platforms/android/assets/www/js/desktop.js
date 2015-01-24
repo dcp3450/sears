@@ -1,11 +1,19 @@
 function menuAction(e){
-    e.parentNode.parentNode.className = "lowerScreen";
-    e.parentNode.parentNode.innerHTML = e.parentNode.parentNode.innerHTML+'<div id="cover" onclick="menuClose(this)"></div>';
+    var nodeContainer = e.parentNode.parentNode;
+    nodeContainer.className = "lowerScreen";
+    nodeContainer.setAttribute("style","overflow:hidden");
+    nodeContainer.innerHTML = nodeContainer.innerHTML+'<div id="cover" onclick="menuClose(this,testMe)"></div>';
 }
 
-function menuClose(e) {
-    e.parentNode.className = "";
+function testMe(e){
+    setTimeout(function(){ e.setAttribute("style",""); }, 600);
+}
+
+function menuClose(e,callback) {
+    var nodeContainer = e.parentNode;
+    nodeContainer.className = "";
     e.remove();
+<<<<<<< HEAD
 }
 
 function triggerView(view){
@@ -78,3 +86,19 @@ var addRippleEffect = function (e) {
 }
 
 document.addEventListener('click', addRippleEffect, false);
+=======
+    callback(nodeContainer);
+}
+
+function triggerView(view){
+
+}
+
+function triggerPopup(type){
+    document.getElementById('popup').className = "show";
+}
+
+function closePopup(){
+    document.getElementById('popup').className = "";
+}
+>>>>>>> 62f5a2ff948f864f04bfb3d7acc17894b63840f4
