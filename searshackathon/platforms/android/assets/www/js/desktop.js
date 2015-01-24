@@ -13,6 +13,8 @@ function menuClose(e,callback) {
     var nodeContainer = e.parentNode;
     nodeContainer.className = "";
     e.remove();
+
+    callback(nodeContainer);
 }
 
 function triggerView(view){

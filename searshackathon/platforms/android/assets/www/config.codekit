@@ -64,6 +64,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/barcode.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20007,
+		"inputAbbreviatedPath": "\/img\/barcode.jpg",
+		"outputAbbreviatedPath": "\/img\/barcode.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/contentBack.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -174,6 +185,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/popupback.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17475,
+		"inputAbbreviatedPath": "\/img\/popupback.jpg",
+		"outputAbbreviatedPath": "\/img\/popupback.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/profileimg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -192,6 +214,17 @@
 		"initialSize": 36371,
 		"inputAbbreviatedPath": "\/img\/profileMain.png",
 		"outputAbbreviatedPath": "\/img\/profileMain.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/relatedprod.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7705,
+		"inputAbbreviatedPath": "\/img\/relatedprod.jpg",
+		"outputAbbreviatedPath": "\/img\/relatedprod.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -243,9 +276,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/index.js",
-		"outputAbbreviatedPath": "\/js\/index-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/index-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
