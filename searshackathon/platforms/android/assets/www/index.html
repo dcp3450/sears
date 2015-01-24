@@ -41,7 +41,7 @@
                 <ul id="menu">
                     <li onclick='triggerView("home")' id="home" class="current">Home</li>
                     <li onclick='triggerView("points")' id="points">Redeem Points</li>
-                    <li onclick='triggerView("coupons")' id="coupons">My Coupons</li>
+                    <li onclick='triggerView("deals")' id="deals">My deals</li>
                     <li onclick='triggerView("notify")' id="notify">Notifications<span class="counter">8</span></li>
                 </ul>
                 <div id="prefStore">
@@ -60,7 +60,7 @@
 
                 <header>
                     <div class="menu" onclick="menuAction(this)">menu</div>
-                    <div onclick='triggerView("points")' class="smallPoints">250<span class="couponIcon"></span></div>
+                    <div onclick='triggerView("points")' class="smallPoints">250<span class="dealIcon"></span></div>
                 </header>
                 <article class="off home">
                     <div class="wrap user-info">
@@ -72,7 +72,7 @@
                     </div>
                     <div class="wrap">
                         <button onclick='triggerView("points")' class="button-main">Redeem Points</button>
-                        <button onclick='triggerView("coupons")' class="button-main">My Coupons</button>
+                        <button onclick='triggerView("deals")' class="button-main">My deals</button>
                     </div>
                     <div class="panel">
                         <img src="img/hardwoodPanel.jpg">
@@ -90,7 +90,9 @@
                     <!--<p id="nfc-id"></p>-->
 
                 </article>
-                <article class="current points">
+
+                <!-- points -->
+                <article class="off points">
                     <div class="article-header">
                         <img src="img/pontsback.jpg" />
                         <ul class="tabs">
@@ -99,95 +101,211 @@
                             <li>Points</li>
                         </ul>
                     </div>
-                    <div class="couponList">
-                        <div class="couponPreview">
-                            <div class="couponCover">
+                    <div class="dealList">
+                        <div class="dealPreview">
+                            <div class="dealCover">
                                 <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
                             </div>
-                            <div class="couponConfirm">
+                            <div class="dealConfirm">
                                 <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                            </div>
-                        </div>
-
-                        <div class="couponPreview">
-                            <div class="couponCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
-                            </div>
-                            <div class="couponConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                            </div>
-                        </div>
-
-                        <div class="couponPreview">
-                            <div class="couponCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
-                            </div>
-                            <div class="couponConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                            </div>
-                        </div>
-
-                        <div class="couponPreview">
-                            <div class="couponCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
-                            </div>
-                            <div class="couponConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                            </div>
-                        </div>
-
-                        <div class="couponPreview">
-                            <div class="couponCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
-                            </div>
-                            <div class="couponConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                            </div>
-                        </div>
-
-                        <div class="couponPreview">
-                            <div class="couponCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
-                            </div>
-                            <div class="couponConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                            </div>
-                        </div>
-
-                        <div class="couponPreview">
-                            <div class="couponCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="couponPrice">35 Points</p>
-                            </div>
-                            <div class="couponConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="couponShort"></p>
+                                <p class="dealShort"></p>
                                 <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Redeem</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- my deals -->
+                <article class="current deals">
+                    <div class="article-header">
+                        <img src="img/dealsBack.jpg" />
+                        <ul class="tabs">
+                            <li class="active">Most Recent</li>
+                            <li>Percentage</li>
+                            <li>Points</li>
+                        </ul>
+                    </div>
+                    <div class="dealList">
+                        <div class="dealPreview dealDelete">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmText">Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmTextDelete">Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmTextDelete">Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmTextDelete">Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmTextDelete">Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmTextDelete">Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="dealPreview">
+                            <div class="dealCover">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
+                                <p class="dealPrice">35 Points</p>
+                            </div>
+                            <div class="dealConfirm">
+                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <p class="dealShort"></p>
+                                <p class="confirmTextDelete">Delete</p>
                             </div>
                         </div>
                     </div>
                 </article>
             </section>
         </div>
-        <script type="text/javascript" src="js/desktop.js"></script>
-<!--        <script type="text/javascript" src="cordova.js"></script>
+       <script type="text/javascript" src="js/desktop.js"></script>
+        <!--  <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script>
--->
-    </body>
+        </script>-->
+
+   </body>
 </html>

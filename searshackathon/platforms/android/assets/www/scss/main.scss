@@ -76,6 +76,7 @@ $openSansReg: normal normal 400 14px/17px 'openSansRegular',helvetica, arial, sa
 $searsOrange: #ff6600;
 $searsBlueMain: #152850;
 $confirmGreen: #34b06c;
+$confirmRed: #e43939;
 
 
 * {
@@ -134,7 +135,7 @@ header {
         color: white;
         text-align: right;
     }
-    .couponIcon {
+    .dealIcon {
         background: transparent url("../img/menuIcons.png") no-repeat 0 -1202px;
         display: block;
         float: right;
@@ -223,7 +224,7 @@ nav {
             background-position: 0 -701px;
         }
     }
-    #coupons {
+    #deals {
         background-position: 0 -187px;
         &.current {
             background-position: 0 -795px;
@@ -279,10 +280,9 @@ nav {
     padding: 2px 0;
 }
 section {
-
+    box-shadow: 0 0 15px black;
     display: block;
     z-index: 2;
-
     -webkit-transition: all 500ms ease;
 }
 .user-info{
@@ -327,7 +327,6 @@ section {
 }
 .lowerScreen {
     -webkit-transform: scale(.6) translateX(80%);
-    box-shadow: 0 0 15px black;
 }
 #cover {
     z-index: 100;
@@ -353,7 +352,7 @@ background: #152850 url('../img/contentBack.png') no-repeat 0 0;
         height: 40px;
         list-style-type: none;
         margin: 0;
-        padding: 0 20px;
+        padding: 0 10px;
         width: 100%;
         li {
             border-bottom: transparent 2px solid;
@@ -376,8 +375,8 @@ background: #152850 url('../img/contentBack.png') no-repeat 0 0;
         width: 100%;
     }
 }
-.couponList {
-    .couponPreview {
+.dealList {
+    .dealPreview {
         background: $confirmGreen;
         float: left;
         margin: 10px 2% 0 2%;
@@ -390,11 +389,11 @@ background: #152850 url('../img/contentBack.png') no-repeat 0 0;
             height: auto;
             width: 100%;
         }
-        .couponShort {
+        .dealShort {
             @include span-columns(6);
             color: $searsBlueMain;
         }
-        .couponPrice,
+        .dealPrice,
         .confirmText{
             @include span-columns(3);
             color: $searsBlueMain;
@@ -406,19 +405,25 @@ background: #152850 url('../img/contentBack.png') no-repeat 0 0;
         .confirmText {
             color: white;
         }
-        .couponCover {
+        .dealCover {
             @include position(absolute,0 0 null null);
             background: #e2f4fc;
             border-bottom: $searsOrange 2px solid;
         }
-        .couponConfirm {
+        .dealConfirm {
             border-bottom: $confirmGreen 2px solid;
         }
-        .couponCover,
-        .couponConfirm {
+        .dealCover,
+        .dealConfirm {
             float: left;
             padding: 10px;
             width: 100%;
+        }
+        &.dealDelete {
+            background: $confirmRed;
+            .dealConfirm {
+                border-bottom: $confirmRed 2px solid;
+            }
         }
     }
 }

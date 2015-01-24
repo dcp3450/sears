@@ -118,7 +118,7 @@ header {
     text-align: right; }
     header .smallPoints:last-child {
       margin-right: 0; }
-  header .couponIcon {
+  header .dealIcon {
     background: transparent url("../img/menuIcons.png") no-repeat 0 -1202px;
     display: block;
     float: right;
@@ -220,9 +220,9 @@ nav {
     background-position: 0 -91px; }
     #menu #points.current {
       background-position: 0 -701px; }
-  #menu #coupons {
+  #menu #deals {
     background-position: 0 -187px; }
-    #menu #coupons.current {
+    #menu #deals.current {
       background-position: 0 -795px; }
   #menu #notify {
     background-position: 0 -287px; }
@@ -273,6 +273,7 @@ nav {
   padding: 2px 0; }
 
 section {
+  box-shadow: 0 0 15px black;
   display: block;
   z-index: 2;
   -webkit-transition: all 500ms ease; }
@@ -314,8 +315,7 @@ section {
     text-transform: uppercase; }
 
 .lowerScreen {
-  -webkit-transform: scale(0.6) translateX(80%);
-  box-shadow: 0 0 15px black; }
+  -webkit-transform: scale(0.6) translateX(80%); }
 
 #cover {
   z-index: 100; }
@@ -340,7 +340,7 @@ article {
     height: 40px;
     list-style-type: none;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 10px;
     width: 100%; }
     article .tabs li {
       border-bottom: transparent 2px solid;
@@ -359,32 +359,32 @@ article {
     height: auto;
     width: 100%; }
 
-.couponList .couponPreview {
+.dealList .dealPreview {
   background: #34b06c;
   float: left;
   margin: 10px 2% 0 2%;
   position: relative;
   width: 96%; }
-  .couponList .couponPreview .imgHold {
+  .dealList .dealPreview .imgHold {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 23.2317613015%; }
-    .couponList .couponPreview .imgHold:last-child {
+    .dealList .dealPreview .imgHold:last-child {
       margin-right: 0; }
-  .couponList .couponPreview img {
+  .dealList .dealPreview img {
     height: auto;
     width: 100%; }
-  .couponList .couponPreview .couponShort {
+  .dealList .dealPreview .dealShort {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 48.821174201%;
     color: #152850; }
-    .couponList .couponPreview .couponShort:last-child {
+    .dealList .dealPreview .dealShort:last-child {
       margin-right: 0; }
-  .couponList .couponPreview .couponPrice,
-  .couponList .couponPreview .confirmText {
+  .dealList .dealPreview .dealPrice,
+  .dealList .dealPreview .confirmText {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
@@ -394,21 +394,25 @@ article {
     line-height: 70px;
     margin: 0;
     text-align: right; }
-    .couponList .couponPreview .couponPrice:last-child,
-    .couponList .couponPreview .confirmText:last-child {
+    .dealList .dealPreview .dealPrice:last-child,
+    .dealList .dealPreview .confirmText:last-child {
       margin-right: 0; }
-  .couponList .couponPreview .confirmText {
+  .dealList .dealPreview .confirmText {
     color: white; }
-  .couponList .couponPreview .couponCover {
+  .dealList .dealPreview .dealCover {
     position: absolute;
     top: 0;
     right: 0;
     background: #e2f4fc;
     border-bottom: #ff6600 2px solid; }
-  .couponList .couponPreview .couponConfirm {
+  .dealList .dealPreview .dealConfirm {
     border-bottom: #34b06c 2px solid; }
-  .couponList .couponPreview .couponCover,
-  .couponList .couponPreview .couponConfirm {
+  .dealList .dealPreview .dealCover,
+  .dealList .dealPreview .dealConfirm {
     float: left;
     padding: 10px;
     width: 100%; }
+  .dealList .dealPreview.dealDelete {
+    background: #e43939; }
+    .dealList .dealPreview.dealDelete .dealConfirm {
+      border-bottom: #e43939 2px solid; }
