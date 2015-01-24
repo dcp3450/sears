@@ -122,3 +122,11 @@ function menuClose(e,callback) {
 function triggerView(view){
 
 }
+
+function triggerPopup(type){
+    document.getElementById('popup').className = "show";
+}
+
+function closePopup(){
+    document.getElementById('popup').className = "";
+}

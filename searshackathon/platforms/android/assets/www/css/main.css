@@ -90,9 +90,11 @@ img {
   vertical-align: middle; }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #4684bf;
   height: 40px;
-  position: relative;
   width: 100%;
   -webkit-backface-visibility: hidden;
   z-index: 10; }
@@ -100,7 +102,6 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
     display: block;
     height: 21px;
     text-indent: -999999px;
@@ -257,6 +258,9 @@ nav {
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase; }
+    #prefStore .title span {
+      float: right;
+      font-size: 10px; }
   #prefStore ul {
     margin-left: 10px;
     padding-left: 20px; }
@@ -326,6 +330,7 @@ article {
   background-size: cover;
   width: 100%;
   overflow-x: scroll;
+  padding-top: 40px;
   position: relative;
   z-index: 3; }
   article.current {
@@ -416,3 +421,23 @@ article {
     background: #e43939; }
     .dealList .dealPreview.dealDelete .dealConfirm {
       border-bottom: #e43939 2px solid; }
+
+/* pop up */
+#popup {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #dcdcdc;
+  width: 100%;
+  overflow-x: scroll;
+  padding-top: 40px;
+  z-index: 50;
+  -webkit-transition: all 300ms ease;
+  height: 250px; }
+  #popup header {
+    left: 100%;
+    -webkit-transition: all 300ms ease; }
+  #popup.show {
+    left: 0%; }
+    #popup.show header {
+      left: 0%; }
