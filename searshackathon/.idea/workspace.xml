@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5384614" vertical-offset="774" max-vertical-offset="1410">
-              <caret line="198" column="39" selection-start-line="198" selection-start-column="39" selection-end-line="198" selection-end-column="39" />
+            <state vertical-scroll-proportion="-5.4615383" vertical-offset="774" max-vertical-offset="1410">
+              <caret line="309" column="11" selection-start-line="309" selection-start-column="10" selection-end-line="309" selection-end-column="14" />
               <folding>
                 <element signature="tag#article#0;tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#article#1;tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -78,20 +78,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39473686" vertical-offset="1440" max-vertical-offset="2055">
+            <state vertical-scroll-proportion="-4.4117646" vertical-offset="1440" max-vertical-offset="2055">
               <caret line="111" column="48" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7647059" vertical-offset="6486" max-vertical-offset="6915">
+            <state vertical-scroll-proportion="2.631579" vertical-offset="5025" max-vertical-offset="6915">
               <caret line="435" column="12" selection-start-line="435" selection-start-column="12" selection-end-line="435" selection-end-column="12" />
               <folding />
             </state>
@@ -830,14 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7647059" vertical-offset="6486" max-vertical-offset="6915">
-          <caret line="435" column="12" selection-start-line="435" selection-start-column="12" selection-end-line="435" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/js/desktop.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="510">
@@ -846,10 +838,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4117646" vertical-offset="1440" max-vertical-offset="2055">
+          <caret line="111" column="48" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5384614" vertical-offset="774" max-vertical-offset="1410">
-          <caret line="198" column="39" selection-start-line="198" selection-start-column="39" selection-end-line="198" selection-end-column="39" />
+        <state vertical-scroll-proportion="-5.4615383" vertical-offset="774" max-vertical-offset="1410">
+          <caret line="309" column="11" selection-start-line="309" selection-start-column="10" selection-end-line="309" selection-end-column="14" />
           <folding>
             <element signature="tag#article#0;tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#article#1;tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -858,10 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39473686" vertical-offset="1440" max-vertical-offset="2055">
-          <caret line="111" column="48" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="48" />
+        <state vertical-scroll-proportion="2.631579" vertical-offset="5025" max-vertical-offset="6915">
+          <caret line="435" column="12" selection-start-line="435" selection-start-column="12" selection-end-line="435" selection-end-column="12" />
           <folding />
         </state>
       </provider>
