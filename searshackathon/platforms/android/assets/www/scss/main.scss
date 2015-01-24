@@ -127,19 +127,112 @@ header {
         -webkit-backface-visibility: hidden;
     }
 }
-.button-main{
+/** BUTTONS **/
+button {
+    position: relative;
+    display: block;
     @include span-columns(6 of 12);
-    background: $searsOrange;
     border: none;
-    border-radius: 5px;
-    padding: 15px;
-    color: #ffffff;
+    outline: none;
     font-family: $openSansReg;
     font-size: 16px;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    background: $searsOrange;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 2px;
+    z-index: 11;
 
+    &.hide{
+        @include transition(color, 200ms ease-out);
+        @include transition-delay(0.5s);
+        opacity: 0;
+    }
+}
+.ripple {
+  position: absolute;
+  background: rgba(0,0,0,.25);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.ripple.show {
+  -webkit-animation: ripple .5s ease-out;
+  animation: ripple .5s ease-out;
+}
+@-webkit-keyframes ripple {
+    to {
+     -webkit-transform: scale(1);
+     transform: scale(1);
+     opacity: 0;
+    }
+}
+@keyframes ripple {
+    to {
+     -webkit-transform: scale(1);
+     transform: scale(1);
+     opacity: 0;
+    }
+}
+/** Button Click Transitions **/
+.expand-circle{
+    @include transition(all 1s ease-out);
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: $searsOrange;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    z-index:10;
+
+    &.fullScreen{
+        -webkit-animation: expandFullScreen 400ms ease-in;
+        -webkit-animation-timing-function:linear;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        visibility: visible;
+
+        &.reverse{
+            -webkit-animation: fullscreenGone 400ms ease-out;
+            -webkit-animation-timing-function:linear;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+        }
+    }
+}
+@-webkit-keyframes expandFullScreen{
+
+
+    100% {
+        width: 300%;
+        height: 175%;
+        border-radius: 50%;
+        top: -32.5%;
+        left: -75%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fullscreenGone{
+    0%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 nav,
 section,
@@ -290,12 +383,13 @@ section {
 
 /* articles */
 article {
-    @include position(absolute, null null 0 0);
+    @include position(absolute, 0 0 0px 0px);
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
     height: 100%;
     width: 100%;
     overflow-x: scroll;
+    padding-top: 60px;
     &.off {
         display: none;
     }
