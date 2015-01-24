@@ -37,24 +37,23 @@ function triggerView(view){
 //document.addEventListener("click", printMousePos);
 
 function expandView(target){
-    var targetID = target + "-expand";
-    var viewToExpand = document.getElementById(targetID);
+    var viewToExpand = document.getElementById("expand");
     viewToExpand.className = viewToExpand.className + " fullScreen";
     viewFadeOut(viewToExpand);
 }
 
 function viewFadeOut(view){
     var viewToFadeOut = view;
-    console.log(view);
     setTimeout(function(){
-        view.className = view.className + " reverse";
+        viewToFadeOut.className = viewToFadeOut.className + " reverse";
         var buttons = document.getElementsByClassName('button-main');
         for (var i = 0; i < buttons.length; ++i) {
             var item = buttons[i];
             item.className = "button-main";
         }
-    },1000)
 
+    },1000);
+    setTimeout(function(){ viewToFadeOut.className = "expand-circle";}, 1400);
 }
 var addRippleEffect = function (e) {
     var target = e.target;
@@ -85,12 +84,8 @@ var addRippleEffect = function (e) {
 }
 
 document.addEventListener('click', addRippleEffect, false);
-    callback(nodeContainer);
-}
 
-function triggerView(view){
 
-}
 
 function triggerPopup(type){
     document.getElementById('popup').className = "show";
