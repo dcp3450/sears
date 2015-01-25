@@ -58,12 +58,12 @@ $visual-grid: true;
 
 @font-face {
     font-family: 'openSansRegular';
-    src: url('opensans-regular-webfont.eot');
-    src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-regular-webfont.woff2') format('woff2'),
-         url('opensans-regular-webfont.woff') format('woff'),
-         url('opensans-regular-webfont.ttf') format('truetype'),
-         url('opensans-regular-webfont.svg#open_sansregular') format('svg');
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -114,14 +114,18 @@ img{
     vertical-align: middle;
 }
 header {
-    @include position(fixed,0 null null 0);
+    position: fixed;
+    top: 0;
+    left: 0;
     background: #4684bf;
     height: 40px;
     width: 100%;
     -webkit-backface-visibility: hidden;
-    z-index: 10;
+    z-index: 20;
     .menu {
-        @include position(absolute, 10px null null 10px);
+        position: absolute;
+        top: 10px;
+        left: 10px;
         //background: transparent url("../img/menuTrigger.png") no-repeat 0 0;
         display: block;
         height: 21px;
@@ -130,7 +134,9 @@ header {
         -webkit-backface-visibility: hidden;
     }
     .smallPoints {
-        @include position(absolute, 10px 10px null null);
+        position: absolute;
+        top: 10px;
+        right: 10px;
         @include span-columns(6);
         color: white;
         text-align: right;
@@ -210,7 +216,7 @@ button {
     background: $searsOrange;
     color: rgba(0, 0, 0, 0.87);
     border-radius: 50%;
-    visibility: hidden;
+    display: none;
     opacity: 0;
     z-index:10;
 
@@ -219,19 +225,17 @@ button {
         -webkit-animation-timing-function:linear;
         -webkit-animation-iteration-count: 1;
         -webkit-animation-fill-mode: forwards;
-        visibility: visible;
+        display: block;
 
-        &.reverse{
-            -webkit-animation: fullscreenGone 400ms ease-out;
-            -webkit-animation-timing-function:linear;
-            -webkit-animation-iteration-count: 1;
-            -webkit-animation-fill-mode: forwards;
-        }
+
+    }
+    &.reverse{
+        @include transition(background 400ms ease-out);
+        background: none;
+
     }
 }
 @-webkit-keyframes expandFullScreen{
-
-
     100% {
         width: 300%;
         height: 175%;
@@ -241,15 +245,8 @@ button {
         opacity: 1;
     }
 }
-@-webkit-keyframes fullscreenGone{
-    0%{
-        opacity: 1;
-    }
 
-    100% {
-        opacity: 0;
-    }
-}
+
 nav,
 section,
 #cover{
@@ -387,7 +384,7 @@ section {
     img{
         @include span-columns(5 of 12);
         @include shift(3.5);
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
     p{
         clear: both;
@@ -399,7 +396,7 @@ section {
         letter-spacing: 1px;
         &.point-value{
             font-size: 50px;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
         &.name{
             font-size: 30px;
@@ -431,20 +428,27 @@ section {
 
 /* articles */
 article {
+<<<<<<< HEAD
+    position: absolute;
+    bottom: 0;
+    left: 0;
+=======
     @include position(absolute, null null 0px 0px);
+>>>>>>> e5199fc2799ab708c1752cb637496606ffcdb1a4
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
     width: 100%;
     overflow-x: scroll;
     padding-top: 60px;
-    padding-top: 40px;
     position: relative;
     z-index: 3;
     &.current {
         z-index: 4;
     }
     &.off {
-        @include position(absolute, null null 0 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
         display: none;
     }
     .tabs {
@@ -466,7 +470,7 @@ article {
             }
         }
     }
-}
+
 .article-header {
     margin-bottom: 10px;
     position: relative;
@@ -506,7 +510,9 @@ article {
             color: white;
         }
         .dealCover {
-            @include position(absolute,0 0 null null);
+            position: absolute;
+            top: 0;
+            right: 0;
             background: #e2f4fc;
             border-bottom: $searsOrange 2px solid;
             &.dealLink {
@@ -533,7 +539,9 @@ article {
 
 /* pop up */
 #popup {
-    @include position(absolute,0 null null 100%);
+    position: absolute;
+    top: 0;
+    left: 100%;
     background: #dcdcdc;
     width: 100%;
     overflow-x: scroll;
