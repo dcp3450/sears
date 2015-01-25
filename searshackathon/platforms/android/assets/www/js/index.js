@@ -231,7 +231,7 @@ function closePopup(){
 /** SWIPE EVENTS **/
 //angular stuff only
 var app = angular.module('mydeals', []);
-
+var uId = ""
 function getUser(fields){
     var url = ""
 
@@ -253,6 +253,7 @@ function getUser(fields){
             }
             $scope.photo = data.picture;
             $scope.points = data.pt_total;
+            uId = data.uuid;
         }).
         error(function(data, status, headers, config) {
 //            called asynchronously if an error occurs
@@ -263,6 +264,51 @@ function getUser(fields){
     }]);
 }
 
+<<<<<<< HEAD
 getUser("fname,lname,picture,pt_total");
 
 
+=======
+getUser("fname,lname,picture,pt_total,uuid");
+
+function getOpenDeals(fields){
+    var url = ""
+
+        if(fields && fields != '')
+            url = 'http://dcp3451-test.apigee.net/mydeals/deals?fields='+fields;
+        else
+            url = 'http://dcp3451-test.apigee.net/mydeals/deals';
+
+        app.controller('availableDealsController',['$scope','$http',function($scope,$http){
+
+            $http.get(url).
+            success(function(data, status, headers, config) {
+                // this callback will be called asynchronously
+                // when the response is available
+                $scope.items = data;
+
+                angular.forEach($scope.items,function(value,index){
+                    var dealSet = value;
+                    angular.forEach(value,function(v,i){
+                        if(i == "keyword") {
+                            photoUrl = 'http://dcp3451-test.apigee.net/mydeals/productPhoto/'+v;
+                            $http.get(photoUrl).
+                            success(function(data, status, headers, config) {
+                                $scope.prod_photo = data.prod_photo;
+                            });
+                        }
+                    });
+                });
+
+            }).
+            error(function(data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+
+            });
+
+        }]);
+}
+
+getOpenDeals("keyword,short_desc,pt_value");
+>>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d

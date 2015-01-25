@@ -187,28 +187,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/profileimg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13767,
-		"inputAbbreviatedPath": "\/img\/profileimg.jpg",
-		"outputAbbreviatedPath": "\/img\/profileimg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profileMain.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 36371,
-		"inputAbbreviatedPath": "\/img\/profileMain.png",
-		"outputAbbreviatedPath": "\/img\/profileMain.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/relatedprod.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

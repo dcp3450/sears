@@ -37,7 +37,10 @@
         <script type="text/javascript" src="js/node_modules/angular/angular.min.js"></script>
     </head>
     <body class="start">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
         <div class="app" ng-app="mydeals">
             <nav class="wrap">
                 <div id="profileTrigger" ng-controller="userProfileController">
@@ -76,10 +79,16 @@
                 <div id="expand" class="expand-circle">
 
                 </div>
+<<<<<<< HEAD
                 <article class="current home">
 
                     <div class="wrap user-info" ng-controller="userProfileController">
                         <p class="name">{{ fullname() }}</p>
+=======
+                <article class="off home">';,
+                    <div class="wrap user-info" ng-controller="userProfileController">
+                        <p class="name">J{ fullname() }}</p>
+>>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
                         <div class="spinner">
                             <img src="{{ photo }}">
                             <svg id="spinner" width="200px" height="200px" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#ff6600">
@@ -101,8 +110,12 @@
                         </div>
 
 
+<<<<<<< HEAD
                         <p class="point-value">{{ points }}</p>
                         <p id="nfc-value"></p>
+=======
+                        <p class="point-value">{{ points }}<span id="nfc-value"></span></p>
+>>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
                         <p>Points</p>
 
                     </div>
@@ -128,7 +141,7 @@
 
                 </article>
                 <!-- points -->
-                <article class="off points">
+                <article class="current points">
                     <div class="article-header">
                         <img src="img/pontsback.jpg" />
                         <ul class="tabs">
@@ -137,97 +150,21 @@
                             <li>Points</li>
                         </ul>
                     </div>
-                    <div class="dealList">
-                        <div class="dealPreview">
+                    <div class="dealList" ng-controller="availableDealsController">
+
+                        <div class="dealPreview" ng-repeat="(key,item) in items">
                             <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
+                                <div class="imgHold"><img src="{{ prod_photo }}" /></div>
+                                <p class="dealShort">{{ item.short_desc }}</p>
+                                <p class="dealPrice">{{ item.pt_value }} Points</p>
                             </div>
                             <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <div class="imgHold"><img src="{{ prod_photo }}" /></div>
                                 <p class="dealShort"></p>
                                 <p class="confirmText">Redeem</p>
                             </div>
                         </div>
 
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmText">Redeem</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmText">Redeem</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmText">Redeem</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmText">Redeem</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmText">Redeem</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmText">Redeem</p>
-                            </div>
-                        </div>
                     </div>
                 </article>
 
@@ -241,97 +178,21 @@
                             <li>Points</li>
                         </ul>
                     </div>
-                    <div class="dealList">
-                        <div onclick="triggerPopup('myDeal')" class="dealPreview dealDelete">
+                    <div class="dealList" ng-controller="availableDealsController">
+
+                        <div onclick="triggerPopup('myDeal')" class="dealPreview dealDelete" ng-repeat="(key,item) in items">
                             <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
+                                <div class="imgHold"><img src="{{ prod_photo }}" /></div>
+                                <p class="dealShort">{{ item.short_desc }}</p>
+                                <p class="dealPrice">{{ item.pt_value }} Points</p>
                             </div>
                             <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
+                                <div class="imgHold"><img src="{{ prod_photo }}" /></div>
                                 <p class="dealShort"></p>
                                 <p class="confirmText">Delete</p>
                             </div>
                         </div>
 
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmTextDelete">Delete</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmTextDelete">Delete</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmTextDelete">Delete</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmTextDelete">Delete</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmTextDelete">Delete</p>
-                            </div>
-                        </div>
-
-                        <div class="dealPreview">
-                            <div class="dealCover">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort">20% off all Polo by Ralph Lauren</p>
-                                <p class="dealPrice">35 Points</p>
-                            </div>
-                            <div class="dealConfirm">
-                                <div class="imgHold"><img src="img/polocoupon.jpg" /></div>
-                                <p class="dealShort"></p>
-                                <p class="confirmTextDelete">Delete</p>
-                            </div>
-                        </div>
                     </div>
                 </article>
                 <!-- my notifications -->
@@ -465,6 +326,7 @@
 
 
     </body>
+<<<<<<< HEAD
 
          <script type="text/javascript" src="js/desktop.js"></script>
 
@@ -477,5 +339,13 @@
 
 
          <!--</script>-->
+=======
+         <!--<script type="text/javascript" src="js/desktop.js"></script>-->
+         <script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+         <script type="text/javascript">
+             app.initialize();
+         </script>
+>>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
 
 </html>
