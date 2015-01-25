@@ -2,588 +2,588 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18270",
 "files": {
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/css\/index.css": {
+	"\/css\/index.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/css\/index.css",
+		"inputAbbreviatedPath": "\/css\/index.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/icon.png": {
+	"\/icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 11401,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/icon.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/icon.png",
+		"inputAbbreviatedPath": "\/icon.png",
+		"outputAbbreviatedPath": "\/icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/img\/logo.png": {
+	"\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 29632,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/img\/logo.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/img\/logo.png",
+		"inputAbbreviatedPath": "\/img\/logo.png",
+		"outputAbbreviatedPath": "\/img\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/index.html": {
+	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/index.html",
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/js\/index.js": {
+	"\/js\/index.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/js\/index.js",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/js\/min\/index-min.js",
+		"inputAbbreviatedPath": "\/js\/index.js",
+		"outputAbbreviatedPath": "\/js\/min\/index-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-36-ldpi.png": {
+	"\/res\/icon\/android\/icon-36-ldpi.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3383,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-36-ldpi.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-36-ldpi.png",
+		"inputAbbreviatedPath": "\/res\/icon\/android\/icon-36-ldpi.png",
+		"outputAbbreviatedPath": "\/res\/icon\/android\/icon-36-ldpi.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-48-mdpi.png": {
+	"\/res\/icon\/android\/icon-48-mdpi.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4681,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-48-mdpi.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-48-mdpi.png",
+		"inputAbbreviatedPath": "\/res\/icon\/android\/icon-48-mdpi.png",
+		"outputAbbreviatedPath": "\/res\/icon\/android\/icon-48-mdpi.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-72-hdpi.png": {
+	"\/res\/icon\/android\/icon-72-hdpi.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7839,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-72-hdpi.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-72-hdpi.png",
+		"inputAbbreviatedPath": "\/res\/icon\/android\/icon-72-hdpi.png",
+		"outputAbbreviatedPath": "\/res\/icon\/android\/icon-72-hdpi.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-96-xhdpi.png": {
+	"\/res\/icon\/android\/icon-96-xhdpi.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 11483,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-96-xhdpi.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/android\/icon-96-xhdpi.png",
+		"inputAbbreviatedPath": "\/res\/icon\/android\/icon-96-xhdpi.png",
+		"outputAbbreviatedPath": "\/res\/icon\/android\/icon-96-xhdpi.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-48-type5.png": {
+	"\/res\/icon\/bada-wac\/icon-48-type5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4766,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-48-type5.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-48-type5.png",
+		"inputAbbreviatedPath": "\/res\/icon\/bada-wac\/icon-48-type5.png",
+		"outputAbbreviatedPath": "\/res\/icon\/bada-wac\/icon-48-type5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-50-type3.png": {
+	"\/res\/icon\/bada-wac\/icon-50-type3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4998,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-50-type3.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-50-type3.png",
+		"inputAbbreviatedPath": "\/res\/icon\/bada-wac\/icon-50-type3.png",
+		"outputAbbreviatedPath": "\/res\/icon\/bada-wac\/icon-50-type3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-80-type4.png": {
+	"\/res\/icon\/bada-wac\/icon-80-type4.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 9217,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-80-type4.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada-wac\/icon-80-type4.png",
+		"inputAbbreviatedPath": "\/res\/icon\/bada-wac\/icon-80-type4.png",
+		"outputAbbreviatedPath": "\/res\/icon\/bada-wac\/icon-80-type4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada\/icon-128.png": {
+	"\/res\/icon\/bada\/icon-128.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16334,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada\/icon-128.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/bada\/icon-128.png",
+		"inputAbbreviatedPath": "\/res\/icon\/bada\/icon-128.png",
+		"outputAbbreviatedPath": "\/res\/icon\/bada\/icon-128.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/blackberry\/icon-80.png": {
+	"\/res\/icon\/blackberry\/icon-80.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 9217,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/blackberry\/icon-80.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/blackberry\/icon-80.png",
+		"inputAbbreviatedPath": "\/res\/icon\/blackberry\/icon-80.png",
+		"outputAbbreviatedPath": "\/res\/icon\/blackberry\/icon-80.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-57-2x.png": {
+	"\/res\/icon\/ios\/icon-57-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 14643,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-57-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-57-2x.png",
+		"inputAbbreviatedPath": "\/res\/icon\/ios\/icon-57-2x.png",
+		"outputAbbreviatedPath": "\/res\/icon\/ios\/icon-57-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-57.png": {
+	"\/res\/icon\/ios\/icon-57.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6177,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-57.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-57.png",
+		"inputAbbreviatedPath": "\/res\/icon\/ios\/icon-57.png",
+		"outputAbbreviatedPath": "\/res\/icon\/ios\/icon-57.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-72-2x.png": {
+	"\/res\/icon\/ios\/icon-72-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 19336,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-72-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-72-2x.png",
+		"inputAbbreviatedPath": "\/res\/icon\/ios\/icon-72-2x.png",
+		"outputAbbreviatedPath": "\/res\/icon\/ios\/icon-72-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-72.png": {
+	"\/res\/icon\/ios\/icon-72.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7839,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-72.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/ios\/icon-72.png",
+		"inputAbbreviatedPath": "\/res\/icon\/ios\/icon-72.png",
+		"outputAbbreviatedPath": "\/res\/icon\/ios\/icon-72.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/tizen\/icon-128.png": {
+	"\/res\/icon\/tizen\/icon-128.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 11401,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/tizen\/icon-128.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/tizen\/icon-128.png",
+		"inputAbbreviatedPath": "\/res\/icon\/tizen\/icon-128.png",
+		"outputAbbreviatedPath": "\/res\/icon\/tizen\/icon-128.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/webos\/icon-64.png": {
+	"\/res\/icon\/webos\/icon-64.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6690,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/webos\/icon-64.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/webos\/icon-64.png",
+		"inputAbbreviatedPath": "\/res\/icon\/webos\/icon-64.png",
+		"outputAbbreviatedPath": "\/res\/icon\/webos\/icon-64.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-173-tile.png": {
+	"\/res\/icon\/windows-phone\/icon-173-tile.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 21147,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-173-tile.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-173-tile.png",
+		"inputAbbreviatedPath": "\/res\/icon\/windows-phone\/icon-173-tile.png",
+		"outputAbbreviatedPath": "\/res\/icon\/windows-phone\/icon-173-tile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-48.png": {
+	"\/res\/icon\/windows-phone\/icon-48.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4653,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-48.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-48.png",
+		"inputAbbreviatedPath": "\/res\/icon\/windows-phone\/icon-48.png",
+		"outputAbbreviatedPath": "\/res\/icon\/windows-phone\/icon-48.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-62-tile.png": {
+	"\/res\/icon\/windows-phone\/icon-62-tile.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6207,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-62-tile.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/icon\/windows-phone\/icon-62-tile.png",
+		"inputAbbreviatedPath": "\/res\/icon\/windows-phone\/icon-62-tile.png",
+		"outputAbbreviatedPath": "\/res\/icon\/windows-phone\/icon-62-tile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-hdpi-landscape.png": {
+	"\/res\/screen\/android\/screen-hdpi-landscape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 45248,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-hdpi-landscape.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-hdpi-landscape.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-hdpi-landscape.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-hdpi-landscape.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-hdpi-portrait.png": {
+	"\/res\/screen\/android\/screen-hdpi-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46644,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-hdpi-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-hdpi-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-hdpi-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-hdpi-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-ldpi-landscape.png": {
+	"\/res\/screen\/android\/screen-ldpi-landscape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 15112,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-ldpi-landscape.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-ldpi-landscape.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-ldpi-landscape.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-ldpi-landscape.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-ldpi-portrait.png": {
+	"\/res\/screen\/android\/screen-ldpi-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 14941,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-ldpi-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-ldpi-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-ldpi-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-ldpi-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-mdpi-landscape.png": {
+	"\/res\/screen\/android\/screen-mdpi-landscape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 28912,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-mdpi-landscape.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-mdpi-landscape.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-mdpi-landscape.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-mdpi-landscape.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-mdpi-portrait.png": {
+	"\/res\/screen\/android\/screen-mdpi-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 29381,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-mdpi-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-mdpi-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-mdpi-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-mdpi-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-xhdpi-landscape.png": {
+	"\/res\/screen\/android\/screen-xhdpi-landscape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 77189,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-xhdpi-landscape.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-xhdpi-landscape.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-xhdpi-landscape.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-xhdpi-landscape.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-xhdpi-portrait.png": {
+	"\/res\/screen\/android\/screen-xhdpi-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 78744,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-xhdpi-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/android\/screen-xhdpi-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/android\/screen-xhdpi-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/android\/screen-xhdpi-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type3.png": {
+	"\/res\/screen\/bada-wac\/screen-type3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 29372,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type3.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type3.png",
+		"inputAbbreviatedPath": "\/res\/screen\/bada-wac\/screen-type3.png",
+		"outputAbbreviatedPath": "\/res\/screen\/bada-wac\/screen-type3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type4.png": {
+	"\/res\/screen\/bada-wac\/screen-type4.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46647,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type4.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type4.png",
+		"inputAbbreviatedPath": "\/res\/screen\/bada-wac\/screen-type4.png",
+		"outputAbbreviatedPath": "\/res\/screen\/bada-wac\/screen-type4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type5.png": {
+	"\/res\/screen\/bada-wac\/screen-type5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 18937,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type5.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada-wac\/screen-type5.png",
+		"inputAbbreviatedPath": "\/res\/screen\/bada-wac\/screen-type5.png",
+		"outputAbbreviatedPath": "\/res\/screen\/bada-wac\/screen-type5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada\/screen-portrait.png": {
+	"\/res\/screen\/bada\/screen-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46647,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada\/screen-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/bada\/screen-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/bada\/screen-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/bada\/screen-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/blackberry\/screen-225.png": {
+	"\/res\/screen\/blackberry\/screen-225.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 29556,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/blackberry\/screen-225.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/blackberry\/screen-225.png",
+		"inputAbbreviatedPath": "\/res\/screen\/blackberry\/screen-225.png",
+		"outputAbbreviatedPath": "\/res\/screen\/blackberry\/screen-225.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-landscape-2x.png": {
+	"\/res\/screen\/ios\/screen-ipad-landscape-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 87242,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-landscape-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-landscape.png": {
+	"\/res\/screen\/ios\/screen-ipad-landscape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 86796,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-landscape.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-landscape.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-landscape.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-landscape.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-portrait-2x.png": {
+	"\/res\/screen\/ios\/screen-ipad-portrait-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85806,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-portrait-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-portrait-2x.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-portrait-2x.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-portrait-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-portrait.png": {
+	"\/res\/screen\/ios\/screen-ipad-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 68785,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-ipad-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-ipad-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-landscape-2x.png": {
+	"\/res\/screen\/ios\/screen-iphone-landscape-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 72319,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-landscape-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-landscape.png": {
+	"\/res\/screen\/ios\/screen-iphone-landscape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 30210,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-landscape.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-landscape.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-landscape.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-landscape.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait-2x.png": {
+	"\/res\/screen\/ios\/screen-iphone-portrait-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 70677,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait-2x.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-portrait-2x.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-portrait-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait-568h-2x.png": {
+	"\/res\/screen\/ios\/screen-iphone-portrait-568h-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85308,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait-568h-2x.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait-568h-2x.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-portrait-568h-2x.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-portrait-568h-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait.png": {
+	"\/res\/screen\/ios\/screen-iphone-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 29372,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/ios\/screen-iphone-portrait.png",
+		"inputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-portrait.png",
+		"outputAbbreviatedPath": "\/res\/screen\/ios\/screen-iphone-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/tizen\/README.md": {
+	"\/res\/screen\/tizen\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/tizen\/README.md",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/tizen\/README.html",
+		"inputAbbreviatedPath": "\/res\/screen\/tizen\/README.md",
+		"outputAbbreviatedPath": "\/res\/screen\/tizen\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/webos\/screen-64.png": {
+	"\/res\/screen\/webos\/screen-64.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6263,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/webos\/screen-64.png",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/webos\/screen-64.png",
+		"inputAbbreviatedPath": "\/res\/screen\/webos\/screen-64.png",
+		"outputAbbreviatedPath": "\/res\/screen\/webos\/screen-64.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/windows-phone\/screen-portrait.jpg": {
+	"\/res\/screen\/windows-phone\/screen-portrait.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 20813,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/windows-phone\/screen-portrait.jpg",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/res\/screen\/windows-phone\/screen-portrait.jpg",
+		"inputAbbreviatedPath": "\/res\/screen\/windows-phone\/screen-portrait.jpg",
+		"outputAbbreviatedPath": "\/res\/screen\/windows-phone\/screen-portrait.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec.html": {
+	"\/spec.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec.html",
+		"inputAbbreviatedPath": "\/spec.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/helper.js": {
+	"\/spec\/helper.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/helper.js",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/min\/helper-min.js",
+		"inputAbbreviatedPath": "\/spec\/helper.js",
+		"outputAbbreviatedPath": "\/spec\/min\/helper-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/index.js": {
+	"\/spec\/index.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/index.js",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/min\/index-min.js",
+		"inputAbbreviatedPath": "\/spec\/index.js",
+		"outputAbbreviatedPath": "\/spec\/min\/index-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js": {
+	"\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/min\/jasmine-html-min.js",
+		"inputAbbreviatedPath": "\/spec\/lib\/jasmine-1.2.0\/jasmine-html.js",
+		"outputAbbreviatedPath": "\/spec\/lib\/jasmine-1.2.0\/min\/jasmine-html-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/jasmine.css": {
+	"\/spec\/lib\/jasmine-1.2.0\/jasmine.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/jasmine.css",
+		"inputAbbreviatedPath": "\/spec\/lib\/jasmine-1.2.0\/jasmine.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/jasmine.js": {
+	"\/spec\/lib\/jasmine-1.2.0\/jasmine.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/jasmine.js",
-		"outputAbbreviatedPath": "\/Users\/dpowell\/Desktop\/sears\/sears\/searshackathon\/www\/spec\/lib\/jasmine-1.2.0\/min\/jasmine-min.js",
+		"inputAbbreviatedPath": "\/spec\/lib\/jasmine-1.2.0\/jasmine.js",
+		"outputAbbreviatedPath": "\/spec\/lib\/jasmine-1.2.0\/min\/jasmine-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

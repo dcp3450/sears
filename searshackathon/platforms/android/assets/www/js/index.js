@@ -220,10 +220,12 @@ setTimeout(function(){
 
 function triggerPopup(type){
     document.getElementById('popup').className = "show";
+    document.querySelectorAll('body').setAttribute("style","overflow:hidden");
 }
 
 function closePopup(){
     document.getElementById('popup').className = "";
+    document.querySelectorAll('body').setAttribute("style","");
 }
 
 
@@ -264,11 +266,6 @@ function getUser(fields){
     }]);
 }
 
-<<<<<<< HEAD
-getUser("fname,lname,picture,pt_total");
-
-
-=======
 getUser("fname,lname,picture,pt_total,uuid");
 
 function getOpenDeals(fields){
@@ -311,4 +308,3 @@ function getOpenDeals(fields){
 }
 
 getOpenDeals("keyword,short_desc,pt_value");
->>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d

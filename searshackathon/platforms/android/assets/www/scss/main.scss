@@ -513,6 +513,7 @@ article {
     left: 0;
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
+    min-height: 100%;
     width: 100%;
     overflow-x: scroll;
     padding-top: 40px;
@@ -615,7 +616,7 @@ article {
 
 /* pop up */
 #popup {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 100%;
     background: #dcdcdc;
