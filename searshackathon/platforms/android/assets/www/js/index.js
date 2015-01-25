@@ -226,9 +226,10 @@ function closePopup(){
     document.getElementById('popup').className = "";
 }
 
-
-
 /** SWIPE EVENTS **/
+
+
+
 //angular stuff only
 var app = angular.module('mydeals', []);
 var uId = ""
@@ -264,11 +265,6 @@ function getUser(fields){
     }]);
 }
 
-<<<<<<< HEAD
-getUser("fname,lname,picture,pt_total");
-
-
-=======
 getUser("fname,lname,picture,pt_total,uuid");
 
 function getOpenDeals(fields){
@@ -311,4 +307,3 @@ function getOpenDeals(fields){
 }
 
 getOpenDeals("keyword,short_desc,pt_value");
->>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d

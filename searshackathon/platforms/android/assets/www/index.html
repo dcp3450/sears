@@ -37,10 +37,6 @@
         <script type="text/javascript" src="js/node_modules/angular/angular.min.js"></script>
     </head>
     <body class="start">
-<<<<<<< HEAD
-
-=======
->>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
         <div class="app" ng-app="mydeals">
             <nav class="wrap">
                 <div id="profileTrigger" ng-controller="userProfileController">
@@ -64,10 +60,10 @@
                     </ul>
                     <ul id="phone">
                         <li>(770) 667-6700</li>
-                    </ul>
-                    <img class="mydeals" src="img/mydeals.png">
-                </div>
+                    </ul>`
 
+                </div>
+                <img class="app-logo" src="img/mydeals.png" />
             </nav>
             <section>
 
@@ -79,16 +75,9 @@
                 <div id="expand" class="expand-circle">
 
                 </div>
-<<<<<<< HEAD
                 <article class="current home">
-
                     <div class="wrap user-info" ng-controller="userProfileController">
                         <p class="name">{{ fullname() }}</p>
-=======
-                <article class="off home">';,
-                    <div class="wrap user-info" ng-controller="userProfileController">
-                        <p class="name">J{ fullname() }}</p>
->>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
                         <div class="spinner">
                             <img src="{{ photo }}">
                             <svg id="spinner" width="200px" height="200px" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#ff6600">
@@ -110,13 +99,10 @@
                         </div>
 
 
-<<<<<<< HEAD
                         <p class="point-value">{{ points }}</p>
-                        <p id="nfc-value"></p>
-=======
-                        <p class="point-value">{{ points }}<span id="nfc-value"></span></p>
->>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
                         <p>Points</p>
+                        <p id="nfc-value"></p>
+
 
                     </div>
                     <div class="wrap">
@@ -141,7 +127,7 @@
 
                 </article>
                 <!-- points -->
-                <article class="current points">
+                <article class="off points">
                     <div class="article-header">
                         <img src="img/pontsback.jpg" />
                         <ul class="tabs">
@@ -326,26 +312,17 @@
 
 
     </body>
-<<<<<<< HEAD
 
-         <script type="text/javascript" src="js/desktop.js"></script>
-
-         <!--<script type="text/javascript" src="js/index.js"></script>-->
-        <!--<script type="text/javascript" src="cordova.js"></script>-->
-         <!--<script type="text/javascript">-->
-            <!--app.initialize();-->
-
-
-
-
-         <!--</script>-->
-=======
          <!--<script type="text/javascript" src="js/desktop.js"></script>-->
          <script type="text/javascript" src="cordova.js"></script>
          <script type="text/javascript" src="js/index.js"></script>
          <script type="text/javascript">
              app.initialize();
+
+             $(function(){
+                   alert('test');
+		     });//end of ready
+
          </script>
->>>>>>> 4f1c285a1083dd6d35eb937a1e974c42af14022d
 
 </html>
