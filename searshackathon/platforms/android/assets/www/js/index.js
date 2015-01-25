@@ -134,9 +134,11 @@ function triggerView(view){
     var nextPage = document.getElementsByClassName(view);
     var menuCurrent = document.querySelectorAll('li.current')[0];
     var menuNext = document.querySelectorAll('li#'+view)[0];
-    console.log(menuNext);
-    menuCurrent.classList.remove('current');
-    menuNext.classList.add('current');
+
+    if(menuCurrent !== undefined){
+             menuCurrent.classList.remove('current');
+             menuNext.classList.add('current');
+        }
 //  fade out buttons text
     var buttons = document.getElementsByClassName('button-main');
     for (var i = 0; i < buttons.length; ++i) {
@@ -266,7 +268,7 @@ function getUser(fields){
     }]);
 }
 
-getUser("fname,lname,picture,pt_total,uuid");
+getUser("fname,lname,picture,pt_total,uuid,zip");
 
 function getOpenDeals(fields){
     var url = ""
@@ -284,19 +286,6 @@ function getOpenDeals(fields){
                 // when the response is available
                 $scope.items = data;
 
-                angular.forEach($scope.items,function(value,index){
-                    var dealSet = value;
-                    angular.forEach(value,function(v,i){
-                        if(i == "keyword") {
-                            photoUrl = 'http://dcp3451-test.apigee.net/mydeals/productPhoto/'+v;
-                            $http.get(photoUrl).
-                            success(function(data, status, headers, config) {
-                                $scope.prod_photo = data.prod_photo;
-                            });
-                        }
-                    });
-                });
-
             }).
             error(function(data, status, headers, config) {
                 // called asynchronously if an error occurs
@@ -308,3 +297,25 @@ function getOpenDeals(fields){
 }
 
 getOpenDeals("keyword,short_desc,pt_value");
+
+function categoryProduct(cat){
+
+    var url = 'http://dcp3451-test.apigee.net/mydeals/products?category='+cat;
+    console.log('apiurl'+url);
+    app.controller('categoryProductController',['$scope','$http',function($scope,$http){
+        $http.get(url).
+        success(function(data, status, headers, config) {
+    //            this callback will be called asynchronously
+    //            when the response is available
+            console.log('yes:'+status);
+            $scope.photo = data.MainImageUrl;
+            $scope.desc = data.DescriptionName;
+        }).
+        error(function(data, status, headers, config) {
+    //            called asynchronously if an error occurs
+    //            or server returns response with an error status.
+            console.log('no:'+status);
+        });
+    }]);
+
+}

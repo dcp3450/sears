@@ -132,6 +132,10 @@ header {
         text-indent: -999999px;
         width: 30px;
         -webkit-backface-visibility: hidden;
+        &.close {
+            height: 21px;
+            width: 22px;
+        }
     }
     .smallPoints {
         position: absolute;

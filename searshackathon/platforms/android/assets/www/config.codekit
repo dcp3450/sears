@@ -75,6 +75,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1398,
+		"inputAbbreviatedPath": "\/img\/close.png",
+		"outputAbbreviatedPath": "\/img\/close.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/contentBack.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -82,6 +93,17 @@
 		"initialSize": 188872,
 		"inputAbbreviatedPath": "\/img\/contentBack.png",
 		"outputAbbreviatedPath": "\/img\/contentBack.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/dealdefault.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2820,
+		"inputAbbreviatedPath": "\/img\/dealdefault.jpg",
+		"outputAbbreviatedPath": "\/img\/dealdefault.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
