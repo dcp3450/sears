@@ -220,10 +220,12 @@ setTimeout(function(){
 
 function triggerPopup(type){
     document.getElementById('popup').className = "show";
+    document.querySelectorAll('body').setAttribute("style","overflow:hidden");
 }
 
 function closePopup(){
     document.getElementById('popup').className = "";
+    document.querySelectorAll('body').setAttribute("style","");
 }
 
 /** SWIPE EVENTS **/
