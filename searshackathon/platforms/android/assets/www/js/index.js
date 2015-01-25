@@ -100,6 +100,13 @@ var app = {
                     // Handle the back button
                     return false;
                 }
+
+                setTimeout(function(){
+                    var start = document.querySelectorAll('body.start')[0];
+                    start.classList.remove('start');
+                    start.classList.add('started');
+                },4000);
+
     },
 //    Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -122,10 +129,19 @@ function menuClose(e,callback) {
     var nodeContainer = e.parentNode;
     nodeContainer.className = "";
     e.remove();
+
+    callback(nodeContainer);
 }
 
 function triggerView(view){
     var view = view;
+    var currentPage = document.querySelectorAll('article.current')[0];
+    var nextPage = document.getElementsByClassName(view);
+    var menuCurrent = document.querySelectorAll('li.current')[0];
+    var menuNext = document.querySelectorAll('li#'+view)[0];
+    console.log(menuNext);
+    menuCurrent.classList.remove('current');
+    menuNext.classList.add('current');
 //  fade out buttons text
     var buttons = document.getElementsByClassName('button-main');
     for (var i = 0; i < buttons.length; ++i) {
@@ -133,26 +149,28 @@ function triggerView(view){
         item.className = item.className + " hide";
     }
     setTimeout(function(){
-        expandView(view);
+        expandView(view, nextPage,currentPage);
     },500)
 };
 
-//function printMousePos(e) {
-//    var cursorX = e.clientX;
-//    var cursorY = e.clientY;
-//    console.log("X: " + cursorX + " Y: " + cursorY);
-//}
-//
-//document.addEventListener("click", printMousePos);
-
-function expandView(target){
+function expandView(target,nextPage,currentPage){
     var viewToExpand = document.getElementById("expand");
+    var currentPage = currentPage;
+    var nextPage = nextPage
     viewToExpand.className = viewToExpand.className + " fullScreen";
-    viewFadeOut(viewToExpand);
+    viewFadeOut(viewToExpand,nextPage,currentPage);
+    var cover = document.getElementById('cover');
+    menuClose(cover, testMe);
+
 }
 
-function viewFadeOut(view){
+function viewFadeOut(view,nextPage,currentPage){
     var viewToFadeOut = view;
+    var nextPage = nextPage
+    var currentPage = currentPage;
+    console.log(nextPage);
+    nextPage = nextPage[0];
+    console.log(nextPage);
     setTimeout(function(){
         viewToFadeOut.className = viewToFadeOut.className + " reverse";
         var buttons = document.getElementsByClassName('button-main');
@@ -160,9 +178,14 @@ function viewFadeOut(view){
             var item = buttons[i];
             item.className = "button-main";
         }
-
+        currentPage.classList.remove('current');
+        currentPage.classList.add('off');
+        nextPage.classList.remove('off');
+        nextPage.className = nextPage.className + " current";
     },1000);
-    setTimeout(function(){ viewToFadeOut.className = "expand-circle";}, 1400);
+    setTimeout(function(){
+        viewToFadeOut.className = "expand-circle";
+    }, 1400);
 }
 var addRippleEffect = function (e) {
     var target = e.target;
@@ -203,3 +226,7 @@ function triggerPopup(type){
 function closePopup(){
     document.getElementById('popup').className = "";
 }
+
+
+
+/** SWIPE EVENTS **/

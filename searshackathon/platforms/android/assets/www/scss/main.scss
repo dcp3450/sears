@@ -177,15 +177,22 @@ button {
         @include transition(color, 200ms ease-out);
         @include transition-delay(0.5s);
         opacity: 0;
+        color: $searsOrange;
     }
+}
+.start .button-main{
+  opacity: 0;
+  -webkit-animation: loadOpacity 200ms 2.8s linear;
+  -webkit-animation-fill-mode: forwards;
+}
+.started .button-main{
+    opacity: 1;
 }
 .ripple {
   position: absolute;
   background: rgba(0,0,0,.25);
   border-radius: 100%;
   -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
   pointer-events: none;
 }
 
@@ -196,7 +203,6 @@ button {
 @-webkit-keyframes ripple {
     to {
      -webkit-transform: scale(1);
-     transform: scale(1);
      opacity: 0;
     }
 }
@@ -379,12 +385,30 @@ section {
     z-index: 2;
     -webkit-transition: all 500ms ease;
 }
-.user-info{
+.start .user-info{
+    top: 200px;
+    -webkit-animation: loadAction 200ms 2.2s linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: scale(.6);
 
+    p{
+        -webkit-animation: loadOpacity 200ms 2.6s linear;
+        -webkit-animation-fill-mode: forwards;
+    }
+}
+.started .user-info{
+    top: 0;
+    -webkit-transform: scale(1);
+    p{
+        opacity: 1;
+    }
+}
+.user-info{
+    position: relative;
     img{
-        @include span-columns(5 of 12);
-        @include shift(3.5);
-        margin-bottom: 40px;
+        width: 190px;
+        margin: 5px auto 40px auto;
+        padding: 10px;
     }
     p{
         clear: both;
@@ -394,19 +418,66 @@ section {
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
+        opacity: 0;
+        -webkit-animation: loadOpacity 200ms 2.6s linear;
+        -webkit-animation-fill-mode: forwards;
         &.point-value{
             font-size: 50px;
             margin-bottom: 15px;
         }
         &.name{
             font-size: 30px;
+            padding-top: 20px;
         }
 
     }
 }
+@-webkit-keyframes loadAction{
+    to {
+        top: 0;
+        -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes loadOpacity{
+    to {
+        opacity: 1;
+    }
+}
+.spinner{
+    position: relative;
+    height: 190px;
+    width: 190px;
+    margin: 0px auto 40px auto;
+}
+#spinner{
+    position: absolute;
+    width: 190px;
+    margin: 0 auto 40px auto;
+    top: 0;
+    left: 0;
+}
+.start #circle-spin{
+    -webkit-animation: circleOpacity 200ms 2.4s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.started #circle-spin{
+    stroke-opacity: 1;
+}
+@-webkit-keyframes circleOpacity{
+    to {
+        stroke-opacity: 1;
+    }
+}
+.start .panel {
+    opacity: 0;
+    -webkit-animation: loadOpacity 200ms 3.0s linear;
+    -webkit-animation-fill-mode: forwards;
+}
 .panel{
     border-bottom: 4px solid $searsOrange;
     position: relative;
+    top: 100%;
     margin-bottom: 10px;
     p{
         position: absolute;
@@ -428,18 +499,14 @@ section {
 
 /* articles */
 article {
-<<<<<<< HEAD
     position: absolute;
     bottom: 0;
     left: 0;
-=======
-    @include position(absolute, null null 0px 0px);
->>>>>>> e5199fc2799ab708c1752cb637496606ffcdb1a4
     background: #152850 url('../img/contentBack.png') no-repeat 0 0;
     background-size: cover;
     width: 100%;
     overflow-x: scroll;
-    padding-top: 60px;
+    padding-top: 40px;
     position: relative;
     z-index: 3;
     &.current {
@@ -470,7 +537,7 @@ article {
             }
         }
     }
-
+}
 .article-header {
     margin-bottom: 10px;
     position: relative;
@@ -588,3 +655,5 @@ article {
         color: #4684bf;
     }
 }
+
+
