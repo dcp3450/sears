@@ -99,3 +99,27 @@ function triggerPopup(type){
 function closePopup(){
     document.getElementById('popup').className = "";
 }
+
+
+//angular stuff only
+function getUser(){
+    var request = new XMLHttpRequest();
+    request.open('GET', 'http://dcp3451-test.apigee.net/mydeals/users', true);
+
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        // Success!
+        var data = JSON.parse(request.responseText);
+        alert(data);
+      } else {
+        // We reached our target server, but it returned an error
+
+      }
+    };
+
+
+
+    request.send();
+}
+
+getUser();
