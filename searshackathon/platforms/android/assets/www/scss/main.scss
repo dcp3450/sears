@@ -347,7 +347,15 @@ nav {
         line-height: 12px;
         text-align: center;
         width: 14px;
+        vertical-align: middle;
+        margin-left: 5px;
+        padding-top: 1px;
     }
+
+}
+.mydeals{
+    width: 95px;
+    margin: 10px;
 }
 #prefStore {
     @include span-columns(7);
@@ -408,7 +416,8 @@ section {
     img{
         width: 190px;
         margin: 5px auto 40px auto;
-        padding: 10px;
+        padding: 15px;
+        border-radius: 50%;
     }
     p{
         clear: both;
@@ -427,7 +436,7 @@ section {
         }
         &.name{
             font-size: 30px;
-            padding-top: 20px;
+            padding-top: 30px;
         }
 
     }

@@ -36,13 +36,9 @@
 
         <script type="text/javascript" src="js/node_modules/angular/angular.min.js"></script>
     </head>
-<<<<<<< HEAD
     <body class="start">
-        <div class="app">
-=======
-    <body>
+
         <div class="app" ng-app="mydeals">
->>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
             <nav class="wrap">
                 <div id="profileTrigger" ng-controller="userProfileController">
                     <div class="profileimg">
@@ -66,7 +62,9 @@
                     <ul id="phone">
                         <li>(770) 667-6700</li>
                     </ul>
+                    <img class="mydeals" src="img/mydeals.png">
                 </div>
+
             </nav>
             <section>
 
@@ -79,14 +77,11 @@
 
                 </div>
                 <article class="current home">
+
                     <div class="wrap user-info" ng-controller="userProfileController">
                         <p class="name">{{ fullname() }}</p>
-                        <img src="{{ photo }}">
-                        <p class="point-value">{{ points }}</p>
-                    <div class="wrap user-info">
-                        <p class="name">James Anderson</p>
                         <div class="spinner">
-                            <img src="img/profileMain.png">
+                            <img src="{{ photo }}">
                             <svg id="spinner" width="200px" height="200px" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#ff6600">
                                 <g fill="none" fill-rule="evenodd">
                                     <g transform="translate(1 1)" stroke-width="2">
@@ -106,7 +101,8 @@
                         </div>
 
 
-                        <p class="point-value">250<span id="nfc-value"></span></p>
+                        <p class="point-value">{{ points }}</p>
+                        <p id="nfc-value"></p>
                         <p>Points</p>
 
                     </div>
@@ -465,27 +461,21 @@
                     </div>
                 </div>
             </section>
-        </div>r
+        </div>
 
 
     </body>
-<<<<<<< HEAD
 
          <script type="text/javascript" src="js/desktop.js"></script>
-         <!--<script type="text/javascript" src="cordova.js"></script>-->
+
          <!--<script type="text/javascript" src="js/index.js"></script>-->
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
          <!--<script type="text/javascript">-->
-             <!--app.initialize();-->
+            <!--app.initialize();-->
+
+
+
+
          <!--</script>-->
-
-
-=======
-         <!--<script type="text/javascript" src="js/desktop.js"></script>-->
-         <script type="text/javascript" src="cordova.js"></script>
-         <script type="text/javascript" src="js/index.js"></script>
-         <script type="text/javascript">
-             app.initialize();
-         </script>
->>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
 
 </html>

@@ -112,7 +112,6 @@ function closePopup(){
     document.getElementById('popup').className = "";
 }
 
-<<<<<<< HEAD
 setTimeout(function(){
     var start = document.querySelectorAll('body.start')[0];
     start.classList.remove('start');
@@ -120,28 +119,39 @@ setTimeout(function(){
 },4000);
 
 /** SWIPE EVENTS **/
-=======
 
 //angular stuff only
-function getUser(){
-    var request = new XMLHttpRequest();
-    request.open('GET', 'http://dcp3451-test.apigee.net/mydeals/users', true);
+var app = angular.module('mydeals', []);
 
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400) {
-        // Success!
-        var data = JSON.parse(request.responseText);
-        alert(data);
-      } else {
-        // We reached our target server, but it returned an error
+function getUser(fields){
+    var url = ""
 
-      }
-    };
+    if(fields && fields != '')
+        url = 'http://dcp3451-test.apigee.net/mydeals/users?fields='+fields;
+    else
+        url = 'http://dcp3451-test.apigee.net/mydeals/users';
 
+    app.controller('userProfileController',['$scope','$http',function($scope,$http){
 
+        $http.get(url).
+        success(function(data, status, headers, config) {
+//            this callback will be called asynchronously
+//            when the response is available
+            $scope.fname = data.fname;
+            $scope.lname = data.lname;
+            $scope.fullname = function(){
+                return $scope.fname+" "+$scope.lname;
+            }
+            $scope.photo = data.picture;
+            $scope.points = data.pt_total;
+        }).
+        error(function(data, status, headers, config) {
+//            called asynchronously if an error occurs
+//            or server returns response with an error status.
 
-    request.send();
+        });
+
+    }]);
 }
 
-getUser();
->>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
+getUser("fname,lname,picture,pt_total");

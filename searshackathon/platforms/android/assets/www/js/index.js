@@ -82,13 +82,12 @@ var app = {
                     function(nfcEvent) {
 //                      ignore what's on the tag
 
-                        console.log(nfcEvent);
                         var tag = nfcEvent.tag,
                             ndefMessage = tag.ndefMessage;
                         var messageString = nfc.bytesToString(ndefMessage[0].payload).substring(0);
                         var tagId = nfc.bytesToHexString(tag.id);
-                        document.getElementById("nfc-value").innerHTML = messageString;
-//                        document.getElementById("nfc-id").innerHTML = "tag-ID="+tagId;
+                        document.getElementById("nfc-value").innerHTML = "500";
+                        document.getElementById("nfc-id").innerHTML = "tag-ID="+tagId;
 
                     },
                     function() { console.log("listening for MIME NDEF tags"); },
@@ -101,11 +100,7 @@ var app = {
                     return false;
                 }
 
-                setTimeout(function(){
-                    var start = document.querySelectorAll('body.start')[0];
-                    start.classList.remove('start');
-                    start.classList.add('started');
-                },4000);
+
 
     },
 //    Update DOM on a Received Event
@@ -217,7 +212,11 @@ var addRippleEffect = function (e) {
 
 document.addEventListener('click', addRippleEffect, false);
 
-
+setTimeout(function(){
+    var start = document.querySelectorAll('body.start')[0];
+    start.classList.remove('start');
+    start.classList.add('started');
+},4000);
 
 function triggerPopup(type){
     document.getElementById('popup').className = "show";
@@ -227,11 +226,9 @@ function closePopup(){
     document.getElementById('popup').className = "";
 }
 
-<<<<<<< HEAD
 
 
 /** SWIPE EVENTS **/
-=======
 //angular stuff only
 var app = angular.module('mydeals', []);
 
@@ -247,8 +244,8 @@ function getUser(fields){
 
         $http.get(url).
         success(function(data, status, headers, config) {
-            // this callback will be called asynchronously
-            // when the response is available
+//            this callback will be called asynchronously
+//            when the response is available
             $scope.fname = data.fname;
             $scope.lname = data.lname;
             $scope.fullname = function(){
@@ -258,8 +255,8 @@ function getUser(fields){
             $scope.points = data.pt_total;
         }).
         error(function(data, status, headers, config) {
-            // called asynchronously if an error occurs
-            // or server returns response with an error status.
+//            called asynchronously if an error occurs
+//            or server returns response with an error status.
 
         });
 
@@ -267,4 +264,5 @@ function getUser(fields){
 }
 
 getUser("fname,lname,picture,pt_total");
->>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
+
+
