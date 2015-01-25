@@ -32,15 +32,23 @@
         <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
 
         <title>Hello World</title>
+
+
+        <script type="text/javascript" src="js/node_modules/angular/angular.min.js"></script>
     </head>
+<<<<<<< HEAD
     <body class="start">
         <div class="app">
+=======
+    <body>
+        <div class="app" ng-app="mydeals">
+>>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
             <nav class="wrap">
-                <div id="profileTrigger">
+                <div id="profileTrigger" ng-controller="userProfileController">
                     <div class="profileimg">
-                        <img src="img/profileimg.jpg" />
+                        <img src="{{ photo }}" />
                     </div>
-                    <p class="name">James Anderson</p>
+                    <p class="name">{{ fullname() }}</p>
                 </div>
                 <ul id="menu">
                     <li onclick='triggerView("home")' id="home" class="current">Home</li>
@@ -64,13 +72,17 @@
 
                 <header>
                     <img src="img/menuTrigger.png" class="menu" onclick="menuAction(this)" />
-                    <div onclick='triggerView("points")' class="smallPoints">250<span class="dealIcon"></span></div>
+                    <div onclick='triggerView("points")' class="smallPoints" ng-controller="userProfileController">{{ points }}<span class="dealIcon"></span></div>
                 </header>
                 <!--page transiton -->
                 <div id="expand" class="expand-circle">
 
                 </div>
                 <article class="current home">
+                    <div class="wrap user-info" ng-controller="userProfileController">
+                        <p class="name">{{ fullname() }}</p>
+                        <img src="{{ photo }}">
+                        <p class="point-value">{{ points }}</p>
                     <div class="wrap user-info">
                         <p class="name">James Anderson</p>
                         <div class="spinner">
@@ -432,7 +444,7 @@
                 <div id="popup">
                     <header>
                         <img src="img/menuTrigger.png" class="menu" onclick="closePopup()" />
-                        <div onclick='triggerView("points")' class="smallPoints">250x<span class="dealIcon"></span></div>
+                        <div onclick='triggerView("points")' class="smallPoints" ng-controller="userProfileController">{{ points }}<span class="dealIcon"></span></div>
                     </header>
                     <div class="article-header">
                         <img src="img/popupback.jpg" />
@@ -453,10 +465,11 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div>r
 
 
     </body>
+<<<<<<< HEAD
 
          <script type="text/javascript" src="js/desktop.js"></script>
          <!--<script type="text/javascript" src="cordova.js"></script>-->
@@ -466,5 +479,13 @@
          <!--</script>-->
 
 
+=======
+         <!--<script type="text/javascript" src="js/desktop.js"></script>-->
+         <script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+         <script type="text/javascript">
+             app.initialize();
+         </script>
+>>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
 
 </html>

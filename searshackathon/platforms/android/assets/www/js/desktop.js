@@ -112,6 +112,7 @@ function closePopup(){
     document.getElementById('popup').className = "";
 }
 
+<<<<<<< HEAD
 setTimeout(function(){
     var start = document.querySelectorAll('body.start')[0];
     start.classList.remove('start');
@@ -119,3 +120,28 @@ setTimeout(function(){
 },4000);
 
 /** SWIPE EVENTS **/
+=======
+
+//angular stuff only
+function getUser(){
+    var request = new XMLHttpRequest();
+    request.open('GET', 'http://dcp3451-test.apigee.net/mydeals/users', true);
+
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        // Success!
+        var data = JSON.parse(request.responseText);
+        alert(data);
+      } else {
+        // We reached our target server, but it returned an error
+
+      }
+    };
+
+
+
+    request.send();
+}
+
+getUser();
+>>>>>>> c0c68c942087ae15e90bf1f65c0b74cc8990945a
