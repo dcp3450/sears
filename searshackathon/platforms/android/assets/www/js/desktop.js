@@ -121,37 +121,37 @@ setTimeout(function(){
 /** SWIPE EVENTS **/
 
 //angular stuff only
-var app = angular.module('mydeals', []);
-
-function getUser(fields){
-    var url = ""
-
-    if(fields && fields != '')
-        url = 'http://dcp3451-test.apigee.net/mydeals/users?fields='+fields;
-    else
-        url = 'http://dcp3451-test.apigee.net/mydeals/users';
-
-    app.controller('userProfileController',['$scope','$http',function($scope,$http){
-
-        $http.get(url).
-        success(function(data, status, headers, config) {
-//            this callback will be called asynchronously
-//            when the response is available
-            $scope.fname = data.fname;
-            $scope.lname = data.lname;
-            $scope.fullname = function(){
-                return $scope.fname+" "+$scope.lname;
-            }
-            $scope.photo = data.picture;
-            $scope.points = data.pt_total;
-        }).
-        error(function(data, status, headers, config) {
-//            called asynchronously if an error occurs
-//            or server returns response with an error status.
-
-        });
-
-    }]);
-}
-
-getUser("fname,lname,picture,pt_total");
+//var app = angular.module('mydeals', []);
+//
+//function getUser(fields){
+//    var url = ""
+//
+//    if(fields && fields != '')
+//        url = 'http://dcp3451-test.apigee.net/mydeals/users?fields='+fields;
+//    else
+//        url = 'http://dcp3451-test.apigee.net/mydeals/users';
+//
+//    app.controller('userProfileController',['$scope','$http',function($scope,$http){
+//
+//        $http.get(url).
+//        success(function(data, status, headers, config) {
+////            this callback will be called asynchronously
+////            when the response is available
+//            $scope.fname = data.fname;
+//            $scope.lname = data.lname;
+//            $scope.fullname = function(){
+//                return $scope.fname+" "+$scope.lname;
+//            }
+//            $scope.photo = data.picture;
+//            $scope.points = data.pt_total;
+//        }).
+//        error(function(data, status, headers, config) {
+////            called asynchronously if an error occurs
+////            or server returns response with an error status.
+//
+//        });
+//
+//    }]);
+//}
+//
+//getUser("fname,lname,picture,pt_total");

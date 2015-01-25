@@ -230,9 +230,10 @@ function closePopup(){
     document.querySelectorAll('body').setAttribute("style","");
 }
 
-
-
 /** SWIPE EVENTS **/
+
+
+
 //angular stuff only
 var app = angular.module('mydeals', []);
 var uId = ""

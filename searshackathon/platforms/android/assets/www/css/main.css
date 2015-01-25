@@ -17,19 +17,10 @@
  * under the License.
  */
 /*neat imports*/
-/* Neat 1.7.0
- * http://neat.bourbon.io
- * Copyright 2012-2014 thoughtbot, inc.
- * MIT License */
-html {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
 
 /*NEAT Settings*/
 /* fonts and colors */
@@ -39,20 +30,23 @@ html {
   src: url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff2") format("woff2"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.woff") format("woff"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.ttf") format("truetype"), url("fonts/ufonts.com_alternate_gothic_no2_d-webfont.svg#alternate_gothic_no2_dregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'gothamBold';
   src: url("fonts/gotham_bold-webfont.eot");
   src: url("fonts/gotham_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gotham_bold-webfont.woff2") format("woff2"), url("fonts/gotham_bold-webfont.woff") format("woff"), url("fonts/gotham_bold-webfont.ttf") format("truetype"), url("fonts/gotham_bold-webfont.svg#gotham_boldregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'openSansRegular';
   src: url("fonts/opensans-regular-webfont.eot");
   src: url("fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-regular-webfont.woff2") format("woff2"), url("fonts/opensans-regular-webfont.woff") format("woff"), url("fonts/opensans-regular-webfont.ttf") format("truetype"), url("fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 * {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */ }
 
 body {
@@ -71,12 +65,14 @@ body {
 
 /* Portrait layout (default) */
 .wrap {
+  *zoom: 1;
   max-width: 700;
   margin-left: auto;
   margin-right: auto; }
+  .wrap:before, .wrap:after {
+    content: " ";
+    display: table; }
   .wrap:after {
-    content: "";
-    display: table;
     clear: both; }
 
 h1, p {
@@ -114,10 +110,10 @@ header {
     position: absolute;
     top: 10px;
     right: 10px;
-    float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
     color: white;
     text-align: right; }
     header .smallPoints:last-child {
@@ -133,10 +129,10 @@ header {
 button {
   position: relative;
   display: block;
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 48.821174201%;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
   border: none;
   outline: none;
   font-family: normal normal 400 14px/17px "openSansRegular", helvetica, arial, sans-serif;
@@ -190,11 +186,13 @@ button {
   to {
     -webkit-transform: scale(1);
     opacity: 0; } }
+
 @keyframes ripple {
   to {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0; } }
+
 /** Button Click Transitions **/
 .expand-circle {
   -webkit-transition: all 1s ease-out;
@@ -229,6 +227,7 @@ button {
     top: -32.5%;
     left: -75%;
     opacity: 1; } }
+
 nav,
 section,
 #cover {
@@ -251,19 +250,19 @@ nav {
     margin: 0; }
 
 #profileTrigger {
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 57.3509785009%;
-  margin-left: 4.2649021499%;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 4.2649%;
   margin-bottom: 65px; }
   #profileTrigger:last-child {
     margin-right: 0; }
   #profileTrigger .profileimg {
-    float: left;
     display: block;
-    margin-right: 4.1109178249%;
-    width: 25.6350586965%;
+    float: left;
+    margin-right: 4.11092%;
+    width: 25.63506%;
     background: #233864;
     border-radius: 360px;
     padding: 3px; }
@@ -272,21 +271,21 @@ nav {
   #profileTrigger img {
     border-radius: 360px; }
   #profileTrigger .name {
-    float: left;
     display: block;
-    margin-right: 4.1109178249%;
-    width: 70.2540234786%;
+    float: left;
+    margin-right: 4.11092%;
+    width: 70.25402%;
     color: #152850;
     text-transform: uppercase; }
     #profileTrigger .name:last-child {
       margin-right: 0; }
 
 #menu {
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 57.3509785009%;
-  margin-left: 4.2649021499%;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 4.2649%;
   clear: both;
   font-size: 20px;
   line-height: 28px; }
@@ -332,16 +331,16 @@ nav {
     margin-left: 5px;
     padding-top: 1px; }
 
-.mydeals {
+.app-logo {
   width: 95px;
   margin: 10px; }
 
 #prefStore {
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 57.3509785009%;
-  margin-left: 4.2649021499%;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 4.2649%;
   clear: both; }
   #prefStore:last-child {
     margin-right: 0; }
@@ -418,9 +417,11 @@ section {
   to {
     top: 0;
     -webkit-transform: scale(1); } }
+
 @-webkit-keyframes loadOpacity {
   to {
     opacity: 1; } }
+
 .spinner {
   position: relative;
   height: 190px;
@@ -444,6 +445,7 @@ section {
 @-webkit-keyframes circleOpacity {
   to {
     stroke-opacity: 1; } }
+
 .start .panel {
   opacity: 0;
   -webkit-animation: loadOpacity 200ms 3.0s linear;
@@ -478,6 +480,7 @@ article {
   background-size: cover;
   min-height: 100%;
   width: 100%;
+  min-height: 100%;
   overflow-x: scroll;
   padding-top: 40px;
   position: relative;
@@ -502,7 +505,7 @@ article {
       height: 40px;
       line-height: 38px;
       text-align: center;
-      width: 33.3333333333%; }
+      width: 33.33333%; }
       article .tabs li.active {
         border-color: #ff6600; }
 
@@ -520,29 +523,29 @@ article {
   position: relative;
   width: 96%; }
   .dealList .dealPreview .imgHold {
-    float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 23.2317613015%; }
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
     .dealList .dealPreview .imgHold:last-child {
       margin-right: 0; }
   .dealList .dealPreview img {
     height: auto;
     width: 100%; }
   .dealList .dealPreview .dealShort {
-    float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
     color: #152850; }
     .dealList .dealPreview .dealShort:last-child {
       margin-right: 0; }
   .dealList .dealPreview .dealPrice,
   .dealList .dealPreview .confirmText {
-    float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 23.2317613015%;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%;
     color: #152850;
     font: normal normal 700 14px/17px "gothamBold", helvetica, arial, sans-serif;
     line-height: 70px;
@@ -602,11 +605,11 @@ article {
     width: 32%; }
   #popup .details,
   #popup .notice {
-    float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 82.9403914003%;
-    margin-left: 8.5298042998%;
+    float: left;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
     color: #152850;
     font-size: 12px;
     line-height: 15px;
@@ -616,11 +619,11 @@ article {
     #popup .notice:last-child {
       margin-right: 0; }
   #popup .barcode {
-    float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
-    margin-left: 25.5894128995%; }
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%; }
     #popup .barcode:last-child {
       margin-right: 0; }
   #popup .notice {
